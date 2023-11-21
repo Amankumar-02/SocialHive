@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+  color: #fff;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  scroll-behavior: smooth;
+  /* background-color: rgb(0, 208, 255); */
+  background-color: lightseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card{
+  position: relative;
+  height: 480px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+#main-story{
+  height: 100px;
+  width: 100%;
+  border-bottom: 0.5px solid black;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+#main-story::-webkit-scrollbar{
+  display: none;
+}
+.story{
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(rgb(255, 174, 0), orange, rgb(255, 32, 69), purple, blue);
+  padding: 2.6px;
+  margin-right: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.story:nth-last-child(1){
+  margin-right: 0px;
+}
+.story img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+#fullScreen{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  transform: scale(0);
+  transition: all ease 0.5s;
+  z-index: 20;
+}
+#main-posts{
+  height: calc(100% - 100px);
+  width: 100%;
+  padding: 20px;
+}
+#post{
+  position: relative;
+  height: 75%;
+}
+#post img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 4px black;
+  z-index: 10;
+}
+#post i{
+  color: red;
+  font-size: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.8;
+  transition: all ease 0.4s;
+  text-shadow: 0px 0px 6px red;
+}
+#icons{
+  padding: 8px 0px 2px 0px;
+}
+#icons i{
+  color: black;
+  margin-right: 5px;
+  font-size: 24px;
+  font-weight: 500;
+}
+#icons #heart{
+  color: red;
+}
+#feeds{
+  margin-right: 20px;
+}
+#feeds h5{
+  color: black;
+}
+#feeds p{
+  padding-top: 6px;
+  color: black;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+}
