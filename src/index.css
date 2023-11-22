@@ -74,12 +74,19 @@ body{
   height: calc(100% - 100px);
   width: 100%;
   padding: 20px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
-#post{
+#main-posts::-webkit-scrollbar{
+  display: none;
+}
+.post{
   position: relative;
   height: 75%;
 }
-#post img{
+.post img{
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -87,8 +94,9 @@ body{
   border-radius: 6px;
   box-shadow: 0px 0px 4px black;
   z-index: 10;
+  cursor: pointer;
 }
-#post i{
+.post i{
   color: red;
   font-size: 75px;
   position: absolute;
@@ -99,28 +107,31 @@ body{
   transition: all ease 0.4s;
   text-shadow: 0px 0px 6px red;
 }
-#icons{
+.icons{
   padding: 8px 0px 2px 0px;
 }
-#icons i{
+.icons i{
   color: black;
   margin-right: 5px;
   font-size: 24px;
   font-weight: 500;
+  cursor: pointer;
 }
-#icons #heart{
+.icons #heart{
   color: red;
 }
-#feeds{
+.feeds{
   margin-right: 20px;
 }
-#feeds h5{
+.feeds h5{
   color: black;
 }
-#feeds p{
+.feeds p{
   padding-top: 6px;
   color: black;
   font-size: 12px;
   text-transform: capitalize;
   letter-spacing: 0.8px;
+  text-wrap: wrap;
+  margin-bottom: 20px;
 }
