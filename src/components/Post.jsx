@@ -1,16 +1,17 @@
 import React from 'react'
 
 function Post({
+    likeStyle,
     src,
     alt,
     id,
-    dblClickEvent
+    dblClickEvent,
 }) {
   return (
     <>
       <div className="post">
         <img className={id} src={src.dp} alt={alt} onDoubleClick={dblClickEvent} />
-        <i className="ri-heart-3-fill"></i>
+        <i className="ri-heart-3-fill" style={likeStyle}></i>
       </div>
       <div className="icons">
         {/* <i className="ri-heart-line" id='heart'></i> */}

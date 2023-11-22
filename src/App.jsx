@@ -19,6 +19,7 @@ function App() {
 
   // declare the styles
   const [fullScreen, setFullScreen] = useState({ transform: 'scale(0)', backgroundImage: 'none' });
+  const [like , setLike] = useState({ transform: `translate(-50%, -50%) scale(0)` })
 
   //declare the eventHandler
   const clickEvent = (index) => {
@@ -32,10 +33,10 @@ function App() {
 
   //like eventHandler
   const dblClick = ()=>{
-    document.querySelector("#post i").style.transform= `translate(-50%, -50%) scale(1)`;
+    setLike({transform: `translate(-50%, -50%) scale(1)`})
     setTimeout(()=>{
-      document.querySelector("#post i").style.transform= `translate(-50%, -50%) scale(0)`;
-    }, 1000)
+      setLike({transform: `translate(-50%, -50%) scale(0)`})
+    },1000)
   }
 
   return (
@@ -63,6 +64,7 @@ function App() {
           {postImg.map((src, index)=>(
            <Post
            key={index}
+           likeStyle={like}
            src={src}
            alt={`post${index + 1}`}
            id={index}
