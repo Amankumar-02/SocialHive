@@ -1,36 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "gilroy";
-  color: #fff;
+}
+#root {
+  padding: 1rem 2rem;
 }
 html, body{
   height: 100%;
   width: 100%;
 }
 body{
+}
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.container{
+  /* padding-top: 1rem; */
   scroll-behavior: smooth;
-  /* background-color: rgb(0, 208, 255); */
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#topBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 0px 15px;
+}
+#topImg img{
+  width: 60%;
+  height: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#topIcons i{
+  font-size: 22px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+#postAuth{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.8rem;
+}
+#postLeft{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.userImg{
+  height: 35px;
+  width: 35px;
+  /* background: linear-gradient(rgb(255, 174, 0), orange, rgb(255, 32, 69), purple, blue); */
+  background: rgb(53, 52, 52);
+  padding: 1px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.userImg img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+.userName{
+  padding-left: 6px;
+  padding-bottom: 4px;
+}
+.userName h2{
+  font-size: 14px;
+  text-transform: lowercase;
+}
+#postRight i{
+  font-size: 24px;
+  cursor: pointer;
+}
 #card{
   position: relative;
-  height: 480px;
+  height: 540px;
   width: 350px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 2px solid black;
   overflow: hidden;
 }
 #main-story{
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
-  border-bottom: 0.5px solid black;
-  padding: 15px;
+  padding: 4px 15px;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -71,9 +167,9 @@ body{
   z-index: 20;
 }
 #main-posts{
-  height: calc(100% - 100px);
+  height: calc(100% - 180px);
+  /* height: 320px; */
   width: 100%;
-  padding: 20px;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: auto;
@@ -84,15 +180,15 @@ body{
 }
 .post{
   position: relative;
-  height: 75%;
+  height: 70%;
 }
 .post img{
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 6px;
-  box-shadow: 0px 0px 4px black;
+  /* border-radius: 6px; */
+  /* box-shadow: 0px 0px 4px black; */
   z-index: 10;
   cursor: pointer;
 }
@@ -108,11 +204,11 @@ body{
   text-shadow: 0px 0px 6px red;
 }
 .icons{
-  padding: 8px 0px 2px 0px;
+  padding: 8px 0.6rem 2px 0.6rem;
 }
 .icons i{
   color: black;
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 24px;
   font-weight: 500;
   cursor: pointer;
@@ -122,16 +218,30 @@ body{
 }
 .feeds{
   margin-right: 20px;
+  padding: 0rem 0.8rem;
 }
 .feeds h5{
   color: black;
+  font-size: 13px;
+  font-weight: 600;
 }
 .feeds p{
-  padding-top: 6px;
+  /* padding-top: 6px; */
   color: black;
   font-size: 12px;
   text-transform: capitalize;
   letter-spacing: 0.8px;
   text-wrap: wrap;
   margin-bottom: 20px;
+}
+#bottomBar{
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 4px;
+}
+#bottomBar i{
+  font-size: 24px;
+  cursor: pointer;
 }
