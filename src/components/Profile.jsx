@@ -222,11 +222,13 @@ function Profile() {
         <>
           <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
             <div>
+              <Link to="/profile">
               <img
                 src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
                 alt="Insta Icon"
                 className="w-20"
-              />
+                />
+                </Link>
             </div>
             <div>
               <button
@@ -241,15 +243,19 @@ function Profile() {
             <div id="card">
               <div id="topBar">
                 <div id="topImg">
+                  <Link to="/profile">
                   <img
                     src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
                     alt="Insta Icon"
-                  />
+                    />
+                    </Link>
                 </div>
                 <div id="topIcons">
                   <i className="ri-add-box-line"></i>
                   <i className="ri-heart-line"></i>
+                  <Link to="/messages">
                   <i className="ri-messenger-line"></i>
+                  </Link>
                 </div>
               </div>
               <div
@@ -282,11 +288,21 @@ function Profile() {
                 ))}
               </div>
               <div id="bottomBar">
+                <Link to="/profile">
                 <i className="ri-home-4-fill"></i>
+                </Link>
+                <Link to="/search">
                 <i className="ri-search-line"></i>
+                </Link>
+                <Link to="/profile">
                 <i className="ri-add-box-line"></i>
+                </Link>
+                <Link to="/reels">
                 <i className="ri-instagram-line"></i>
+                </Link>
+                <Link to="/user">
                 <i className="ri-user-line"></i>
+                </Link>
               </div>
             </div>
           </div>

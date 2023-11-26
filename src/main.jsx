@@ -7,6 +7,10 @@ import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } 
 import Profile from './components/Profile.jsx'
 import Signup from './components/Signup.jsx'
 import Login from './components/Login.jsx'
+import User from './components/User.jsx';
+import Search from './components/Search.jsx';
+import Reels from './components/Reels.jsx';
+import Messages from './components/Messages.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +18,10 @@ const router = createBrowserRouter(
       <Route path='/' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/profile' element={<Profile/>}/>
+      <Route path='/user' element={<User/>}/>
+      <Route path='/search' element={<Search/>}/>
+      <Route path='/reels' element={<Reels/>}/>
+      <Route path='/messages' element={<Messages/>}/>
     </Route>
   )
 )
