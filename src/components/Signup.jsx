@@ -23,7 +23,7 @@ function Signup() {
     }
   }
   return (
-    <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-full flex flex-col justify-center py-12 lg:py-4 sm:px-6 lg:px-8">
         <div className="text-center text-2xl font-bold"><img
               src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
               alt="Insta Icon"
