@@ -24,9 +24,15 @@ function Signup() {
   }
   return (
     <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-        <div className="text-center text-2xl font-bold">Sign up</div>
-        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="text-center text-2xl font-bold"><img
+              src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
+              alt="Insta Icon"
+              className="w-40 m-auto"
+            />
+            {/* <div className="text-center text-lg font-bold">SignUp</div> */}
+            </div>
+        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-md text-center">
+          <div className="bg-white py-4 px-4 shadow sm:rounded-lg sm:px-10">
             <form className="space-y-6" action="#" method="POST">
               <div>
                 <label
@@ -42,7 +48,8 @@ function Signup() {
                     type="text"
                     autoComplete="name"
                     required
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder='username'
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-regal2-blue focus:border-regal2-blue sm:text-sm"
                     onChange={(e)=>{setUser({...user, name: e.target.value})}}
                   />
                 </div>
@@ -59,7 +66,8 @@ function Signup() {
                     id="email"
                     name="email"
                     type="email"
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder='email address'
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-regal2-blue focus:border-regal2-blue sm:text-sm"
                     onChange={(e)=>{setUser({...user, email: e.target.value})}}
                     />
                 </div>
@@ -79,25 +87,28 @@ function Signup() {
                     type="password"
                     autoComplete="current-password"
                     required
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder='password'
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-regal2-blue focus:border-regal2-blue sm:text-sm"
                     onChange={(e)=>{setUser({...user, password: e.target.value})}}
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-center">
                 <div className="text-sm">
+                Already have Account,&nbsp;
                   <a
                     href="/"
-                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                    className="text-regal-blue font-semibold
+                    hover:font-medium"
                   >
-                    Already have Account, Sign In
+                    Sign In
                   </a>
                 </div>
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-regal-blue hover:bg-regal2-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-regal2-blue"
                   onClick={signUpUser}
                 >
                   Sign Up
@@ -121,7 +132,7 @@ function Signup() {
                 <div>
                   <a
                     href="/"
-                    className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                    className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-regal-blue hover:text-regal2-blue"
                   >
                     <span className="sr-only">Sign in with Facebook</span>
                     <svg
@@ -142,7 +153,7 @@ function Signup() {
                 <div>
                   <a
                     href="/"
-                    className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                    className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-regal-blue hover:text-regal2-blue"
                   >
                     <span className="sr-only">Sign in with Twitter</span>
                     <svg
@@ -159,7 +170,7 @@ function Signup() {
                 <div>
                   <a
                     href="/"
-                    className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                    className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-regal-blue hover:text-regal2-blue"
                   >
                     <span className="sr-only">Sign in with GitHub</span>
                     <svg

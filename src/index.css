@@ -48,6 +48,24 @@ body{
 .read-the-docs {
   color: #888;
 } */
+
+/* Login Page */
+#loginContainer{
+  width: 60%;
+}
+#loginBox{
+  width: 50%;
+  text-align: center;
+}
+#instaImg{
+  height: 100%;
+  object-fit: cover;
+}
+#loginBtn{
+  /* background-color: #4CB5F9; */
+}
+
+/* Profile Page */
 .container{
   /* padding-top: 1rem; */
   scroll-behavior: smooth;
