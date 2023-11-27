@@ -241,6 +241,13 @@ function Profile() {
           </div>
           <div className="container">
             <div id="card">
+            <div
+                id="fullScreen"
+                style={fullScreen}
+                // onClick={() =>
+                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
+                // }
+              ></div>
               <div id="topBar">
                 <div id="topImg">
                   <Link to="/profile">
@@ -258,13 +265,7 @@ function Profile() {
                   </Link>
                 </div>
               </div>
-              <div
-                id="fullScreen"
-                style={fullScreen}
-                // onClick={() =>
-                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
-                // }
-              ></div>
+              
               <div id="main-story">
                 {img.map((src, index) => (
                   <Stories
