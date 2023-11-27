@@ -28,4 +28,8 @@
     #userContainer{
       height: 360px;
     }
+    #main-message{
+      height: 440px;
+      padding-top: 2rem;
+    }
 }
