@@ -375,7 +375,7 @@ html, body{
   outline: none;
 }
 
-#msg-story{
+#msgStory{
   position: relative;
   /* height: 100px; */
   width: 100%;
@@ -385,7 +385,7 @@ html, body{
   overflow-y: hidden;
   scroll-behavior: smooth;
 }
-#msg-story::-webkit-scrollbar{
+#msgStory::-webkit-scrollbar{
   display: none;
 }
 .msgStories{
@@ -407,7 +407,7 @@ html, body{
   object-position: center;
   cursor: pointer;
 }
-#activeStatus{
+.activeStatus{
   position: absolute;
   top: 55px;
 }

@@ -44,13 +44,17 @@ function Messages() {
     {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Hi!!",},
     {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi!!",},
     {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi!!",},
     {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi!!",},
     {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
   ];
 
@@ -125,18 +129,18 @@ function Messages() {
           </div>
           <div className="container">
             <div id="card">
-            {/* <div
+              <div
                 id="fullScreen"
                 style={fullScreen}
                 // onClick={() =>
                 //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
                 // }
               >
-              </div> */}
+              </div>
               <div id="topBar">
                 <div className="flex items-center justify-center">
                   <Link to="/profile">
-                  <i class="ri-arrow-left-line text-xl"></i>
+                    <i className="ri-arrow-left-line text-xl"></i>
                   </Link>
                   <p className="text-xl ps-2 flex items-center justify-center">
                     {userDetails.name}
@@ -161,45 +165,52 @@ function Messages() {
                   </p>
                 </div>
                 <div id="topIcons">
-                  <i class="ri-video-add-line"></i>
-                  <i class="ri-file-edit-line"></i>
+                  <i className="ri-video-add-line"></i>
+                  <i className="ri-file-edit-line"></i>
                 </div>
               </div>
               <div id="msgBar" className="bg-gray-300">
-                    <i className="ri-search-line"></i>
-                    <input type="text" placeholder="Search" className="bg-transparent"/>
+                <i className="ri-search-line"></i>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="bg-transparent"
+                />
               </div>
-              <div id="msg-story">
-              {postImg.map((src, index) => (
-                <>
-                <div key={index} className="msgStories">
-                  <i id="activeStatus" class="ri-circle-fill text-green-600 text-xs"></i>
-                  <img src={src.dp} alt={`msg-story ${index}`}/>
-                  <p className="msgText">{src.text}</p>
-                </div>
-                </>
-              ))}
+              <div id="msgStory">
+                {postImg.map((src, index) => (
+                    <div key={index} className="msgStories">
+                      <i
+                        className="ri-circle-fill text-green-600 text-xs activeStatus"
+                      ></i>
+                      <img src={src.dp} alt={`msgStory ${index}`} />
+                      <p className="msgText">{src.text}</p>
+                    </div>
+                ))}
               </div>
               <div className="flex items-center justify-between px-4">
                 <p className="text-sm font-semibold">Messages</p>
                 <p className="text-xs text-regal-blue font-medium">Requests</p>
               </div>
               <div className="py-2" id="main-message">
-              {contacts.map((src, index)=>
-              (<div className="flex items-center justify-between px-2 py-1">
-                <div className="contactMembers">
-                  <div className="contactImg">
-                  <img src={src.dp} alt={`contact${index}`} />
+                {contacts.map((src, index) => (
+                  <div key={index} className="flex items-center justify-between px-2 py-1">
+                    <div className="contactMembers">
+                      <div className="contactImg">
+                        <img src={src.dp} alt={`contact${index}`} />
+                      </div>
+                      <div className="ms-4">
+                        <p className="text-xs font-semibold">
+                          {src.contactName}
+                        </p>
+                        <p className="text-xs">{src.msg}</p>
+                      </div>
+                    </div>
+                    <div>
+                      <i className="ri-camera-line text-2xl"></i>
+                    </div>
                   </div>
-                  <div className="ms-4">
-                    <p className="text-xs font-semibold">{src.contactName}</p>
-                    <p className="text-xs">{src.msg}</p>
-                  </div>
-                </div>
-                <div>
-                <i class="ri-camera-line text-2xl"></i>
-                </div>
-              </div>))}
+                ))}
               </div>
             </div>
           </div>
@@ -217,7 +228,7 @@ function Messages() {
         </>
       )}
     </>
-  )
+  );
 }
 
 export default Messages
