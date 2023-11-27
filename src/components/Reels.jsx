@@ -2,7 +2,7 @@ import React from "react";
 import "remixicon/fonts/remixicon.css";
 import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 // import Stories from "./Stories";
 // import Post from "./Post";
@@ -177,21 +177,21 @@ function Reels() {
                 </div>
               </div>
               <div id="bottomBar">
-                <Link to="/profile">
-                <i className="ri-home-4-fill"></i>
-                </Link>
-                <Link to="/search">
+                <NavLink to="/profile" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
+                <i className="ri-home-4-line"></i>
+                </NavLink>
+                <NavLink to="/search" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-search-line"></i>
-                </Link>
-                <Link to="/profile">
+                </NavLink>
+                <NavLink to="/profile">
                 <i className="ri-add-box-line"></i>
-                </Link>
-                <Link to="/reels">
+                </NavLink>
+                <NavLink to="/reels" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-instagram-line"></i>
-                </Link>
-                <Link to="/user">
+                </NavLink>
+                <NavLink to="/user" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-user-line"></i>
-                </Link>
+                </NavLink>
               </div>
             </div>
           </div>
