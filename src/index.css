@@ -441,3 +441,16 @@ html, body{
 #main-message::-webkit-scrollbar{
   display: none;
 }
+
+
+
+#msgTopBarDp{
+  width: 40px;
+  height: 40px;
+}
+#msgTopBarDp img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}

@@ -61,11 +61,12 @@ function Messages() {
   //declare variables
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState();
+  const [contactMsg, setContactMsg] = useState([])
 
   // declare the styles
   const [fullScreen, setFullScreen] = useState({
     transform: "scale(0)",
-    backgroundImage: "none",
+    backgroundColor: "white",
   });
 
   //declare auth methods
@@ -96,13 +97,14 @@ function Messages() {
   const clickEvent = (index) => {
     setFullScreen({
       transform: "scale(1)",
-      backgroundImage: `url(${postImg[index].dp})`,
+      backgroundColor: "white",
     });
+    setContactMsg(contacts[index])
 
     //declare the timeout call
-    setTimeout(() => {
-      setFullScreen({ transform: "scale(0)", backgroundImage: "none" });
-    }, 2500);
+    // setTimeout(() => {
+    //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" });
+    // }, 2500);
   };
   return (
     <>
@@ -129,14 +131,33 @@ function Messages() {
           </div>
           <div className="container">
             <div id="card">
-              <div
-                id="fullScreen"
-                style={fullScreen}
-                // onClick={() =>
-                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
-                // }
-              >
+              {/* here we declare the msg tab */}
+              <div id="fullScreen" style={fullScreen}>
+                <div
+                  id="msgTopBar"
+                  className="flex items-center justify-between"
+                >
+                  <div className="flex items-center justify-evenly">
+                    <i
+                      className="ri-arrow-left-line"
+                      onClick={() => {
+                        setFullScreen({
+                          transform: "scale(0)",
+                          backgroundColor: "transparent",
+                        });
+                      }}
+                    ></i>
+                    <div id="msgTopBarDp">
+                      <img src={contactMsg.dp} alt="" />
+                    </div>
+                    <p>{contactMsg.contactName}</p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                  {/* <i class="ri-camera-fill text-white bg-red-600 rounded-md"></i> */}
+                  </div>
+                </div>
               </div>
+
               <div id="topBar">
                 <div className="flex items-center justify-center">
                   <Link to="/profile">
@@ -179,13 +200,11 @@ function Messages() {
               </div>
               <div id="msgStory">
                 {postImg.map((src, index) => (
-                    <div key={index} className="msgStories">
-                      <i
-                        className="ri-circle-fill text-green-600 text-xs activeStatus"
-                      ></i>
-                      <img src={src.dp} alt={`msgStory ${index}`} />
-                      <p className="msgText">{src.text}</p>
-                    </div>
+                  <div key={index} className="msgStories">
+                    <i className="ri-circle-fill text-green-600 text-xs activeStatus"></i>
+                    <img src={src.dp} alt={`msgStory ${index}`} />
+                    <p className="msgText">{src.text}</p>
+                  </div>
                 ))}
               </div>
               <div className="flex items-center justify-between px-4">
@@ -194,7 +213,11 @@ function Messages() {
               </div>
               <div className="py-2" id="main-message">
                 {contacts.map((src, index) => (
-                  <div key={index} className="flex items-center justify-between px-2 py-1">
+                  <div
+                    key={index}
+                    className="flex items-center justify-between px-2 py-1"
+                    onClick={() => clickEvent(index)}
+                  >
                     <div className="contactMembers">
                       <div className="contactImg">
                         <img src={src.dp} alt={`contact${index}`} />
