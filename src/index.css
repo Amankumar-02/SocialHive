@@ -283,6 +283,7 @@ html, body{
 }
 #searchContainer{
   height: 440px;
+  /* height: calc(100% - 400px); */
   width: 100%;
   display: flex;
   align-items: center;
@@ -305,4 +306,23 @@ html, body{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+/* reels page */
+#reelContainer{
+  height: 440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: none;
+  scroll-behavior: smooth;
+}
+#reelContainer::-webkit-scrollbar{
+  display: none;
 }

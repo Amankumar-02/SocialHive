@@ -22,4 +22,7 @@
     #searchContainer{
       height: 570px;
     }
+    #reelContainer{
+      height: 400px;
+    }
 }

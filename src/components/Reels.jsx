@@ -101,15 +101,6 @@ function Reels() {
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState();
 
-  // declare the styles
-  const [fullScreen, setFullScreen] = useState({
-    transform: "scale(0)",
-    backgroundImage: "none",
-  });
-  const [like, setLike] = useState({
-    transform: `translate(-50%, -50%) scale(0)`,
-  });
-
   //declare auth methods
   useEffect(() => {
     try {
@@ -133,27 +124,6 @@ function Reels() {
       console.error("Log-out failed:", error);
       toast.error(error.message);
     }
-  };
-
-  //declare the eventHandler
-  const clickEvent = (index) => {
-    setFullScreen({
-      transform: "scale(1)",
-      backgroundImage: `url(${img[index].story})`,
-    });
-
-    //declare the timeout call
-    setTimeout(() => {
-      setFullScreen({ transform: "scale(0)", backgroundImage: "none" });
-    }, 2000);
-  };
-
-  //like eventHandler
-  const dblClick = () => {
-    setLike({ transform: `translate(-50%, -50%) scale(1)` });
-    setTimeout(() => {
-      setLike({ transform: `translate(-50%, -50%) scale(0)` });
-    }, 1000);
   };
   return (
     <>
@@ -197,35 +167,6 @@ function Reels() {
                   </Link>
                 </div>
               </div>
-              <div
-                id="fullScreen"
-                style={fullScreen}
-                // onClick={() =>
-                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
-                // }
-              ></div>
-              {/* <div id="main-story">
-                {img.map((src, index) => (
-                  <Stories
-                    key={index}
-                    src={src}
-                    alt={`story${index + 1}`}
-                    id={index}
-                    clickEvent={() => clickEvent(index)}
-                  />
-                ))}
-              </div> */}
-              {/* <div id="main-posts">
-                {postImg.map((src, index) => (
-                  <Post
-                    key={index}
-                    likeStyle={like}
-                    src={src}
-                    alt={`post${index + 1}`}
-                    dblClickEvent={() => dblClick(index)}
-                  />
-                ))}
-              </div> */}
               <div id="reels">
                 <div id="reelContainer">
                 {postImg.map((src, index)=>(
