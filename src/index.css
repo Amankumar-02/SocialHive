@@ -263,3 +263,46 @@ html, body{
   font-size: 24px;
   cursor: pointer;
 }
+
+
+
+
+/* search page */
+#searchBar{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 10px ;
+  padding: 4px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+#searchBar input, #searchBar i{
+  margin-left: 10px;
+  outline: none;
+}
+#searchContainer{
+  height: 440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: none;
+  scroll-behavior: smooth;
+}
+#searchContainer::-webkit-scrollbar{
+  display: none;
+}
+.searchTab{
+  height: 113px;
+  width: 113px;
+}
+.searchTab img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
