@@ -259,7 +259,9 @@ function Profile() {
                 </div>
                 <div id="topIcons">
                   <i className="ri-add-box-line"></i>
+                  <NavLink to="/notifications">
                   <i className="ri-heart-line"></i>
+                  </NavLink>
                   <Link to="/messages">
                   <i className="ri-messenger-line"></i>
                   </Link>

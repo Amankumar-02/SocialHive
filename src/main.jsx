@@ -11,6 +11,7 @@ import User from './components/User.jsx';
 import Search from './components/Search.jsx';
 import Reels from './components/Reels.jsx';
 import Messages from './components/Messages.jsx'
+import Notification from './components/Notification.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path='/search' element={<Search/>}/>
       <Route path='/reels' element={<Reels/>}/>
       <Route path='/messages' element={<Messages/>}/>
+      <Route path='/notifications' element={<Notification/>}/>
     </Route>
   )
 )
