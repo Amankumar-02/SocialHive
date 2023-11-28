@@ -37,11 +37,13 @@
     }
     .contactIcon2 img{
       padding: 0px 6px;
-      /* margin: 0px 6px; */
       height: 25px;
       width: 40px;
     }
     #cameraIconId{
       width: 3rem;
+    }
+    #msgContactBar{
+      padding: 10px;
     }
 }

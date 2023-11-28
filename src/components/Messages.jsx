@@ -43,24 +43,24 @@ function Messages() {
     },
   ];
   const contacts = [
-    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi!!",},
-    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hi!!",},
+    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!", reply:"Hello!",},
+    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hey!!", reply:"Hi!",},
+    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Bonjour 👋", reply:"Hé",},
+    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Whats Up Doc!!", reply:"Fine Buddy 👍",},
+    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi Buddy 😄", reply:"Hey 😄",},
+    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hello 💕", reply:"Hey 🤩",},
+    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!", reply:"Hello!",},
+    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hey!!", reply:"Hi!",},
+    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Bonjour 👋", reply:"Hé",},
+    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Whats Up Doc!!", reply:"Fine Buddy 👍",},
+    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi Buddy 😄", reply:"Hey 😄",},
+    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hello 💕", reply:"Hey 🤩",},
+    {dp:"https://images.unsplash.com/photo-1596936773232-68c5364b44a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alice Grey", msg:"Hi!!", reply:"Hello!",},
+    {dp:"https://images.unsplash.com/photo-1535475021441-dbee269924a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Stella Wayne", msg:"Hey!!", reply:"Hi!",},
+    {dp:"https://images.unsplash.com/photo-1485811661309-ab85183a729c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Ciesta", msg:"Bonjour 👋", reply:"Hé",},
+    {dp:"https://images.unsplash.com/photo-1527010154944-f2241763d806?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Andrew", msg:"Whats Up Doc!!", reply:"Fine Buddy 👍",},
+    {dp:"https://images.unsplash.com/photo-1536303158031-c868b371399f?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Alex Gale", msg:"Hi Buddy 😄", reply:"Hey 😄",},
+    {dp:"https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", contactName:"Jennifer Matt", msg:"Hello 💕", reply:"Hey 🤩",},
   ];
 
   //declare variables
@@ -136,9 +136,6 @@ function Messages() {
           </div>
           <div className="container">
             <div id="card">
-
-
-
               {/* here we declare the msg tab */}
               <div id="fullScreen" style={fullScreen}>
                 <div
@@ -161,35 +158,61 @@ function Messages() {
                     <p>{contactMsg.contactName}</p>
                   </div>
                   <div className="flex items-center justify-end contactIcon">
-                  <img src={call} />
-                  <img className="pe-0" src={vc} />
+                    <img src={call} />
+                    <img className="pe-0" src={vc} />
                   </div>
                 </div>
-                <div id="msgMiddleBar">
+                <div id="msgMiddleBar" className="px-2 py-4">
+                  <div className="flex flex-col items-center justify-center">
+                    <div id="msgCenterDp">
+                      <img src={contactMsg.dp} />
+                    </div>
+                    <h1 className="text-sm mt-2 leading-4 font-semibold">
+                      {contactMsg.contactName}
+                    </h1>
+                    <p className="leading-4 text-xs">{`Instagram • ${contactMsg.contactName}`}</p>
+                    <p className="leading-4 text-xs">
+                      {Math.floor(Math.random() * 100)}k followers • {Math.floor(Math.random() * 1000)} post
+                    </p>
+                  </div>
+
+
+                  <div className="mt-2">
+                    <p className="bg-gray-300 inline-block rounded-2xl py-1 text-md px-3">
+                      {contactMsg.msg}
+                    </p>
+                  </div>
+                  <div className="flex justify-end mt-2">
+                    <p className="text-white bg-regal-blue inline-block rounded-2xl py-1 text-md px-3">
+                      {contactMsg.reply}
+                    </p>
+                  </div>
+
                   
                 </div>
                 <div id="msgBottomBar">
                   <div>
-                  <div id="msgContactBar" className="bg-gray-300">
-                    <div id="cameraIconId" className="flex items-center justify-center bg-regal-blue w-11 rounded-xl">
-                      <i className="ri-camera-fill text-white text-lg"></i>
+                    <div id="msgContactBar" className="bg-gray-300">
+                      <div
+                        id="cameraIconId"
+                        className="flex items-center justify-center bg-regal-blue w-11 rounded-xl"
+                      >
+                        <i className="ri-camera-fill text-white text-lg"></i>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Message..."
+                        className="bg-transparent"
+                      />
+                      <div className="contactIcon2 flex justify-end items-center">
+                        <img src={mike} alt="" />
+                        <img src={gallary} alt="" />
+                        <img className="pe-0" src={attach} alt="" />
+                      </div>
                     </div>
-                <input
-                  type="text"
-                  placeholder="Message..."
-                  className="bg-transparent"
-                />
-                <div className="contactIcon2 flex justify-end items-center">
-                      <img src={mike} alt="" />
-                      <img src={gallary} alt="" />
-                      <img className="pe-0" src={attach} alt="" />
                   </div>
-              </div>
-                  </div>
-                  
                 </div>
               </div>
-
 
               <div id="topBar">
                 <div className="flex items-center justify-center">
@@ -262,8 +285,12 @@ function Messages() {
                         <p className="text-xs">{src.msg}</p>
                       </div>
                     </div>
-                    <div>
-                      <i className="ri-camera-line text-2xl"></i>
+                    <div className="flex items-center">
+                      <i
+                        className="ri-circle-fill text-blue-600"
+                        style={{ fontSize: "8px" }}
+                      ></i>
+                      <i className="ri-camera-line text-2xl ms-4"></i>
                     </div>
                   </div>
                 ))}

@@ -462,7 +462,16 @@ html, body{
   object-fit: cover;
 }
 #msgMiddleBar{
-  height: 420px;
+  height: 410px;
+  /* height: 100px; */
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: none;
+  scroll-behavior: smooth;
+}
+#msgMiddleBar::-webkit-scrollbar{
+  display: none;
 }
 
 #msgContactBar{
@@ -470,7 +479,7 @@ html, body{
   align-items: center;
   justify-content: space-evenly;
   margin: 10px ;
-  padding: 4px;
+  padding: 6px;
   border-radius: 50px;
   color: black;
 }
@@ -483,4 +492,15 @@ html, body{
   height: 30%;
   width: 30%;
   object-fit: cover;
+}
+
+#msgCenterDp{
+  height: 100px;
+  width: 100px;
+}
+#msgCenterDp img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }

@@ -170,15 +170,15 @@ function User() {
                   </div>
                   <div className="flex items-center justify-between ps-10 pt-3">
                     <div className="pe-6 text-center">
-                      <p className="font-bold">0</p>
+                      <p className="font-bold">9</p>
                       <p className="text-sm">Posts</p>
                     </div>
                     <div className="pe-6 text-center">
-                      <p className="font-bold">0</p>
+                      <p className="font-bold">{Math.floor(Math.random() * 100)}k</p>
                       <p className="text-sm">Followers</p>
                     </div>
                     <div className="text-center">
-                      <p className="font-bold">0</p>
+                      <p className="font-bold">{Math.floor(Math.random() * 1000)}</p>
                       <p className="text-sm">Following</p>
                     </div>
                   </div>
