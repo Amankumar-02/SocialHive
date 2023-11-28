@@ -46,4 +46,13 @@
     #msgContactBar{
       padding: 10px;
     }
+    #addContainer{
+      height: 570px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 800;
+      color: red;
+    }
 }

@@ -10,8 +10,9 @@ import Login from './components/Login.jsx'
 import User from './components/User.jsx';
 import Search from './components/Search.jsx';
 import Reels from './components/Reels.jsx';
-import Messages from './components/Messages.jsx'
-import Notification from './components/Notification.jsx'
+import Messages from './components/Messages.jsx';
+import Notification from './components/Notification.jsx';
+import Add from './components/Add.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='/reels' element={<Reels/>}/>
       <Route path='/messages' element={<Messages/>}/>
       <Route path='/notifications' element={<Notification/>}/>
+      <Route path='/add' element={<Add/>}/>
     </Route>
   )
 )

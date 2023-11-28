@@ -297,7 +297,7 @@ function Profile() {
                 <NavLink to="/search" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-search-line"></i>
                 </NavLink>
-                <NavLink to="/profile">
+                <NavLink to="/add">
                 <i className="ri-add-box-line"></i>
                 </NavLink>
                 <NavLink to="/reels" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
