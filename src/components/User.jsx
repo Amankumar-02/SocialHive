@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
 import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
+import FooterBar from "./FooterBar";
 
 function User() {
   // declare images
@@ -143,7 +144,9 @@ function User() {
                   </p>
                 </div>
                 <div id="topIcons">
+                  <Link to="/add">
                   <i className="ri-add-box-line"></i>
+                  </Link>
                   <i className="ri-menu-line"></i>
                 </div>
               </div>
@@ -240,7 +243,8 @@ function User() {
                   </div>
                 </div>
               </div>
-              <div id="bottomBar">
+              <FooterBar/>
+              {/* <div id="bottomBar">
                 <NavLink
                   to="/profile"
                   className={({ isActive }) =>
@@ -249,6 +253,7 @@ function User() {
                 >
                   <i className="ri-home-4-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/search"
                   className={({ isActive }) =>
@@ -257,9 +262,14 @@ function User() {
                 >
                   <i className="ri-search-line"></i>
                 </NavLink>
-                <NavLink to="/profile">
+
+                <NavLink to="/add" 
+                className={({ isActive }) =>
+                    `${isActive ? "font-extrabold" : "font-normal"}`
+                  }>
                   <i className="ri-add-box-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/reels"
                   className={({ isActive }) =>
@@ -268,6 +278,7 @@ function User() {
                 >
                   <i className="ri-instagram-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/user"
                   className={({ isActive }) =>
@@ -276,7 +287,7 @@ function User() {
                 >
                   <i className="ri-user-line"></i>
                 </NavLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </>

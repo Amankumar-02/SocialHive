@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
 import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
+import FooterBar from "./FooterBar";
 // import Stories from "./Stories";
 // import Post from "./Post";
 
@@ -129,23 +130,28 @@ function Search() {
                 ))}
                 </div>
               </div>
-              <div id="bottomBar">
+              <FooterBar/>
+              {/* <div id="bottomBar">
                 <NavLink to="/profile" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-home-4-line"></i>
                 </NavLink>
+
                 <NavLink to="/search" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-search-line"></i>
                 </NavLink>
-                <NavLink to="/profile" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
+
+                <NavLink to="/add" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-add-box-line"></i>
                 </NavLink>
+                
                 <NavLink to="/reels" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-instagram-line"></i>
                 </NavLink>
+                
                 <NavLink to="/user" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-user-line"></i>
                 </NavLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </>

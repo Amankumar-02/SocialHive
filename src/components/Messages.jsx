@@ -144,7 +144,7 @@ function Messages() {
                 >
                   <div className="flex items-center justify-evenly ">
                     <i
-                      className="ri-arrow-left-line"
+                      className="ri-arrow-left-line text-xl"
                       onClick={() => {
                         setFullScreen({
                           transform: "scale(0)",

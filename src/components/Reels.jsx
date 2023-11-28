@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
 import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
+import FooterBar from "./FooterBar";
 
 function Reels() {
   // declare images
@@ -81,7 +82,7 @@ function Reels() {
           </div>
           <div className="container">
             <div id="card">
-              <div id="topBar">
+              {/* <div id="topBar">
                 <div id="topImg">
                   <Link to="/profile">
                     <img
@@ -91,12 +92,22 @@ function Reels() {
                   </Link>
                 </div>
                 <div id="topIcons">
+                  <NavLink to="/add">
                   <i className="ri-add-box-line"></i>
+                  </NavLink>
+                  <NavLink to="/notifications">
                   <i className="ri-heart-line"></i>
+                  </NavLink>
                   <Link to="/messages">
                     <i className="ri-messenger-line"></i>
                   </Link>
                 </div>
+              </div> */}
+              <div id="topReelBar">
+                  <Link to="/profile">
+                  <i class="ri-arrow-left-line text-xl" ></i>
+                  </Link>
+                  <p className="text-lg ps-4 font-semibold">Reels</p>
               </div>
               <div id="reels">
                 <div id="reelContainer">
@@ -107,7 +118,8 @@ function Reels() {
                   ))}
                 </div>
               </div>
-              <div id="bottomBar">
+              <FooterBar/>
+              {/* <div id="bottomBar">
                 <NavLink
                   to="/profile"
                   className={({ isActive }) =>
@@ -116,6 +128,7 @@ function Reels() {
                 >
                   <i className="ri-home-4-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/search"
                   className={({ isActive }) =>
@@ -124,9 +137,15 @@ function Reels() {
                 >
                   <i className="ri-search-line"></i>
                 </NavLink>
-                <NavLink to="/profile">
+
+                <NavLink to="/add"
+                  className={({ isActive }) =>
+                    `${isActive ? "font-extrabold" : "font-normal"}`
+                  }
+                >
                   <i className="ri-add-box-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/reels"
                   className={({ isActive }) =>
@@ -135,6 +154,7 @@ function Reels() {
                 >
                   <i className="ri-instagram-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/user"
                   className={({ isActive }) =>
@@ -143,7 +163,7 @@ function Reels() {
                 >
                   <i className="ri-user-line"></i>
                 </NavLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </>

@@ -2,6 +2,7 @@ import React from "react";
 import "remixicon/fonts/remixicon.css";
 import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
+import FooterBar from "./FooterBar";
 import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 
@@ -91,15 +92,21 @@ function Add() {
                   </Link>
                 </div>
                 <div id="topIcons">
-                  <i className="ri-add-box-line"></i>
-                  <i className="ri-heart-line"></i>
+                  <NavLink to="/add">
+                    <i className="ri-add-box-line"></i>
+                  </NavLink>
+                  <NavLink to="/notifications">
+                    <i className="ri-heart-line"></i>
+                  </NavLink>
                   <Link to="/messages">
                     <i className="ri-messenger-line"></i>
                   </Link>
                 </div>
               </div>
               <div id="addContainer">Coming Soon</div>
-              <div id="bottomBar">
+
+              <FooterBar/>
+              {/* <div id="bottomBar">
                 <NavLink
                   to="/profile"
                   className={({ isActive }) =>
@@ -108,6 +115,7 @@ function Add() {
                 >
                   <i className="ri-home-4-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/search"
                   className={({ isActive }) =>
@@ -116,9 +124,16 @@ function Add() {
                 >
                   <i className="ri-search-line"></i>
                 </NavLink>
-                <NavLink to="/profile">
+
+                <NavLink
+                  to="/add"
+                  className={({ isActive }) =>
+                    `${isActive ? "font-extrabold" : "font-normal"}`
+                  }
+                >
                   <i className="ri-add-box-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/reels"
                   className={({ isActive }) =>
@@ -127,6 +142,7 @@ function Add() {
                 >
                   <i className="ri-instagram-line"></i>
                 </NavLink>
+
                 <NavLink
                   to="/user"
                   className={({ isActive }) =>
@@ -135,7 +151,7 @@ function Add() {
                 >
                   <i className="ri-user-line"></i>
                 </NavLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </>
@@ -152,7 +168,7 @@ function Add() {
         </>
       )}
     </>
-  )
+  );
 }
 
 export default Add

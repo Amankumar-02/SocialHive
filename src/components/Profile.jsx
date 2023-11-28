@@ -6,6 +6,7 @@ import { useNavigate, NavLink, Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import Stories from "./Stories";
 import Post from "./Post";
+import FooterBar from "./FooterBar";
 
 function Profile() {
   // declare images
@@ -258,7 +259,9 @@ function Profile() {
                     </Link>
                 </div>
                 <div id="topIcons">
+                  <NavLink to="/add">
                   <i className="ri-add-box-line"></i>
+                  </NavLink>
                   <NavLink to="/notifications">
                   <i className="ri-heart-line"></i>
                   </NavLink>
@@ -290,23 +293,28 @@ function Profile() {
                   />
                 ))}
               </div>
-              <div id="bottomBar">
+              <FooterBar/>
+              {/* <div id="bottomBar">
                 <NavLink to="/profile" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-home-4-line"></i>
                 </NavLink>
+
                 <NavLink to="/search" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-search-line"></i>
                 </NavLink>
-                <NavLink to="/add">
+
+                <NavLink to="/add" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-add-box-line"></i>
                 </NavLink>
+
                 <NavLink to="/reels" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-instagram-line"></i>
                 </NavLink>
+
                 <NavLink to="/user" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>
                 <i className="ri-user-line"></i>
                 </NavLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </>
