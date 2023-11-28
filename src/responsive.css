@@ -40,18 +40,8 @@
       /* margin: 0px 6px; */
       height: 25px;
       width: 40px;
-      object-fit: cover;
     }
-    #msgContactBar{
-      display: flex;
-      align-items: center;
-      margin: 10px ;
-      padding: 10px;
-      border-radius: 50px;
-      color: black;
-    }
-    #msgContactBar input{
-      margin-left: 4px;
-      outline: none;
+    #cameraIconId{
+      width: 3rem;
     }
 }
