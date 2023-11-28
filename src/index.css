@@ -457,8 +457,8 @@ html, body{
 }
 .contactIcon img{
   padding: 0px 10px;
-  height: 35%;
-  width: 35%;
+  height: 3%;
+  width: 32%;
   object-fit: cover;
 }
 #msgMiddleBar{
@@ -477,8 +477,8 @@ html, body{
 #msgContactBar i{
   margin-left: 2px;
   outline: none;
-  height: 26px;
-  width: 42px;
+  height: 28px;
+  width: 46px;
 }
 #msgContactBar input{
   margin-left: 4px;

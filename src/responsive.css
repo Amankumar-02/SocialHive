@@ -37,14 +37,16 @@
     }
     .contactIcon2 img{
       padding: 0px 6px;
-      height: 36%;
-      width: 36%;
+      /* margin: 0px 6px; */
+      height: 25px;
+      width: 40px;
       object-fit: cover;
     }
     #msgContactBar i{
       margin-left: 2px;
       outline: none;
-      width: 50px;
+      height: 28px;
+      width: 40px;
     }
     #msgContactBar{
       display: flex;
