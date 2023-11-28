@@ -447,10 +447,44 @@ html, body{
 #msgTopBarDp{
   width: 40px;
   height: 40px;
+  margin: 0px 10px;
 }
 #msgTopBarDp img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50px;
+}
+.contactIcon img{
+  padding: 0px 10px;
+  height: 35%;
+  width: 35%;
+  object-fit: cover;
+}
+#msgMiddleBar{
+  height: 420px;
+}
+
+#msgContactBar{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 10px ;
+  padding: 4px;
+  border-radius: 50px;
+  color: black;
+}
+#msgContactBar i{
+  margin-left: 2px;
+  outline: none;
+}
+#msgContactBar input{
+  margin-left: 4px;
+  outline: none;
+}
+.contactIcon2 img{
+  padding: 0px 6px;
+  height: 30%;
+  width: 30%;
+  object-fit: cover;
 }

@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
 import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
+import attach from '../asset/attach.png';
+import call from '../asset/call.png';
+import gallary from '../asset/gallary.png';
+import mike from '../asset/mike.png';
+import vc from '../asset/vc.png';
 
 function Messages() {
   // declare images
@@ -131,13 +136,16 @@ function Messages() {
           </div>
           <div className="container">
             <div id="card">
+
+
+
               {/* here we declare the msg tab */}
               <div id="fullScreen" style={fullScreen}>
                 <div
                   id="msgTopBar"
-                  className="flex items-center justify-between"
+                  className="flex items-center justify-between p-3"
                 >
-                  <div className="flex items-center justify-evenly">
+                  <div className="flex items-center justify-evenly ">
                     <i
                       className="ri-arrow-left-line"
                       onClick={() => {
@@ -152,11 +160,34 @@ function Messages() {
                     </div>
                     <p>{contactMsg.contactName}</p>
                   </div>
-                  <div className="flex items-center justify-center">
-                  {/* <i class="ri-camera-fill text-white bg-red-600 rounded-md"></i> */}
+                  <div className="flex items-center justify-end contactIcon">
+                  <img src={call} />
+                  <img className="pe-0" src={vc} />
                   </div>
                 </div>
+                <div id="msgMiddleBar">
+                  
+                </div>
+                <div id="msgBottomBar">
+                  <div>
+                  <div id="msgContactBar" className="bg-gray-300">
+                <i className="ri-camera-fill text-white bg-regal-blue rounded-xl text-center" style={{height:"26px", width:"42px"}}></i>
+                <input
+                  type="text"
+                  placeholder="Message..."
+                  className="bg-transparent"
+                />
+                <div className="contactIcon2 flex justify-end items-center">
+                      <img src={mike} alt="" />
+                      <img src={gallary} alt="" />
+                      <img className="pe-0" src={attach} alt="" />
+                  </div>
               </div>
+                  </div>
+                  
+                </div>
+              </div>
+
 
               <div id="topBar">
                 <div className="flex items-center justify-center">
