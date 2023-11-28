@@ -477,6 +477,8 @@ html, body{
 #msgContactBar i{
   margin-left: 2px;
   outline: none;
+  height: 26px;
+  width: 42px;
 }
 #msgContactBar input{
   margin-left: 4px;

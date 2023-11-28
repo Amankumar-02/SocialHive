@@ -33,6 +33,30 @@
       padding-top: 2rem;
     }
     #msgMiddleBar{
-      height: 545px;
+      height: 540px;
+    }
+    .contactIcon2 img{
+      padding: 0px 6px;
+      height: 36%;
+      width: 36%;
+      object-fit: cover;
+    }
+    #msgContactBar i{
+      margin-left: 2px;
+      outline: none;
+      width: 50px;
+    }
+    #msgContactBar{
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      margin: 10px ;
+      padding: 10px;
+      border-radius: 50px;
+      color: black;
+    }
+    #msgContactBar input{
+      margin-left: 4px;
+      outline: none;
     }
 }
