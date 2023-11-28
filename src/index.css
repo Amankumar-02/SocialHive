@@ -474,12 +474,6 @@ html, body{
   border-radius: 50px;
   color: black;
 }
-#msgContactBar i{
-  margin-left: 2px;
-  outline: none;
-  height: 28px;
-  width: 46px;
-}
 #msgContactBar input{
   margin-left: 4px;
   outline: none;

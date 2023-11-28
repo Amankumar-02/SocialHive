@@ -171,7 +171,9 @@ function Messages() {
                 <div id="msgBottomBar">
                   <div>
                   <div id="msgContactBar" className="bg-gray-300">
-                <i className="ri-camera-fill text-white bg-regal-blue rounded-xl text-center text-lg"></i>
+                    <div className="flex items-center justify-center bg-regal-blue w-11 rounded-xl">
+                      <i className="ri-camera-fill text-white text-lg"></i>
+                    </div>
                 <input
                   type="text"
                   placeholder="Message..."
