@@ -10,13 +10,10 @@ function Reels() {
   // declare images
   const postImg = [
     {
-      dp: "https://images.unsplash.com/photo-1528491836309-55b4a140b78a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      dp: "https://images.unsplash.com/photo-1536995769641-12e9f98fd223?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1536995769641-12e9f98fd223?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       dp: "https://images.unsplash.com/photo-1511167966586-4942d18c6f40?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -26,6 +23,9 @@ function Reels() {
     },
     {
       dp: "https://images.unsplash.com/photo-1624602434823-584645165f47?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      dp: "https://images.unsplash.com/photo-1528491836309-55b4a140b78a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -122,11 +122,13 @@ function Reels() {
                         <div id="reelLeftIcon" className="flex flex-col items-center justify-center">
                         {/* <i class="ri-heart-line"></i> */}
                         <i class="ri-heart-fill text-red-600"></i>
-                        <p>6,500</p>
+                        <p>
+                        {Math.floor(Math.random()*10000)}
+                          </p>
                         <i class="ri-chat-3-line"></i>
-                        <p>6,500</p>
+                        <p>{Math.floor(Math.random()*1000)}</p>
                         <i class="ri-send-plane-line"></i>
-                        <p>6,500</p>
+                        <p>{Math.floor(Math.random()*1000)}</p>
                         <i class="ri-list-check"></i>
                         <div id="reelLeftImg">
                           <img src={src.dp} alt="" />
