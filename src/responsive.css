@@ -23,10 +23,10 @@
       height: 570px;
     }
     #reelContainer{
-      height: 570px;
+      height: 576px;
     }
     #userContainer{
-      height: 360px;
+      height: 365px;
     }
     #main-message{
       height: 440px;
@@ -47,6 +47,9 @@
       padding: 10px;
     }
     #addContainer{
-      height: 570px;
+      height: 573px;
+    }
+    #notificationContainer{
+      height: 573px;
     }
 }

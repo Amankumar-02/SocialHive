@@ -103,7 +103,7 @@ function Notification() {
                   </Link>
                 </div>
               </div>
-              <div id="addContainer" className="text-center">Notifications <br /> Coming Soon</div>
+              <div id="notificationContainer" className="text-center">Notifications <br /> Coming Soon</div>
 
               <FooterBar/>
               {/* <div id="bottomBar">

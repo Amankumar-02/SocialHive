@@ -190,7 +190,7 @@ html, body{
   z-index: 20;
 }
 #main-posts{
-  height: calc(100% - 180px);
+  height: calc(100% - 181px);
   /* height: 320px; */
   width: 100%;
   white-space: nowrap;
@@ -258,11 +258,11 @@ html, body{
   margin-bottom: 20px;
 }
 #bottomBar{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 4px;
+  padding: 4px 0px;
 }
 #bottomBar i{
   font-size: 24px;
@@ -287,7 +287,7 @@ html, body{
   outline: none;
 }
 #searchContainer{
-  height: 440px;
+  height: 437px;
   /* height: calc(100% - 400px); */
   width: 100%;
   display: flex;
@@ -316,7 +316,7 @@ html, body{
 
 /* reels page */
 #reelContainer{
-  height: 440px;
+  height: 443px;
   width: 100%;
   white-space: nowrap;
   overflow-x: hidden;
@@ -338,7 +338,7 @@ html, body{
 
 
 #userContainer{
-  height: 230px;
+  height: 232px;
   /* height: calc(100% - 400px); */
   width: 100%;
   display: flex;
@@ -350,6 +350,7 @@ html, body{
   overflow-x: hidden;
   overflow-y: none;
   scroll-behavior: smooth;
+  padding: 2px 0px;
 }
 #userContainer::-webkit-scrollbar{
   display: none;
@@ -511,6 +512,15 @@ html, body{
 }
 
 #addContainer{
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  color: red;
+}
+#notificationContainer{
   height: 440px;
   display: flex;
   align-items: center;
