@@ -82,7 +82,7 @@ function Notification() {
           </div>
           <div className="container">
             <div id="card">
-              <div id="topBar">
+              {/* <div id="topBar">
                 <div id="topImg">
                   <Link to="/profile">
                     <img
@@ -102,10 +102,71 @@ function Notification() {
                     <i className="ri-messenger-line"></i>
                   </Link>
                 </div>
+              </div> */}
+              <div id="topNotificationBar">
+                <Link to="/profile">
+                  <i className="ri-arrow-left-line text-xl"></i>
+                </Link>
+                <p className="text-lg ps-4 font-semibold">Notifications</p>
               </div>
-              <div id="notificationContainer" className="text-center">Notifications <br /> Coming Soon</div>
 
-              <FooterBar/>
+
+
+              <div id="notificationContainer">
+                <div className="flex items-center">
+                  <div className="notificationImg">
+                    <img src="https://images.unsplash.com/photo-1701083266430-c9b2a5ab1353?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <div id="redDot">9</div>
+                  </div>
+                  <div className="ps-3">
+                  <p className="text-xs font-semibold">Follow requests</p>
+                  <p className="text-xs text-gray-400">Approve or ignore requests</p>
+                  </div>
+                </div>
+                <div className="py-4 text-sm font-semibold tracking-[1px] text-gray-800">Last 30 Days</div>
+                <div>
+                <div className="flex items-center">
+                <div className="notificationImg">
+                    <img src="https://images.unsplash.com/photo-1700775823195-c9939e2239ae?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <div id="imgOverImg"><img src="https://images.unsplash.com/photo-1700585560129-2c03e2a3f511?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+                  </div>
+                  <div className="ps-3 pt-2 w-3/4">
+                  <p className="text-xs font-semibold">alex, jaramy <span className="font-normal">and</span> 3 others <span className="font-normal">invite you to join their broadcast channels.</span></p>
+                  </div>
+                </div>
+                <div className="flex items-center pt-4">
+                  <div className="notificationImg">
+                    <img src="https://images.unsplash.com/photo-1700165723092-c4e4af768cce?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                 </div>
+                <div className="ps-3 w-2/3">
+                <p className="text-xs font-semibold">casey813em<span className="font-normal">, who you might know, is on instagram.</span></p>
+                </div>
+                <div>
+                  <button className="bg-regal-blue px-2 py-1 rounded-lg text-white text-sm cursor-pointer">
+                    Follow
+                  </button>
+                </div>
+                </div>
+                <div className="py-4 text-sm font-semibold tracking-[1px] text-gray-800">Older</div>
+                <div className="flex items-center pt-4">
+                  <div className="notificationImg">
+                    <img src="https://plus.unsplash.com/premium_photo-1700575181270-87f37b2ebb4f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                 </div>
+                <div className="ps-3 w-2/5">
+                <p className="text-xs font-semibold">exotic_food_52<span className="font-normal"> requested to follow you.</span></p>
+                </div>
+                <div>
+                  <button className="bg-regal-blue px-2 py-1 ms-2 rounded-lg text-white text-sm cursor-pointer">
+                    Confirm
+                  </button>
+                  <button className="bg-gray-300 px-2 py-1 ms-2 rounded-lg font- text-sm cursor-pointer">
+                    Delete
+                  </button>
+                </div>
+                </div>
+                </div>
+              </div>
+              <FooterBar />
               {/* <div id="bottomBar">
                 <NavLink
                   to="/profile"
@@ -168,7 +229,7 @@ function Notification() {
         </>
       )}
     </>
-  )
+  );
 }
 
 export default Notification

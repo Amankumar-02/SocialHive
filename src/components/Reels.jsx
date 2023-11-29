@@ -105,7 +105,7 @@ function Reels() {
               </div> */}
               <div id="topReelBar">
                   <Link to="/profile">
-                  <i class="ri-arrow-left-line text-xl" ></i>
+                  <i className="ri-arrow-left-line text-xl" ></i>
                   </Link>
                   <p className="text-lg ps-4 font-semibold">Reels</p>
               </div>
