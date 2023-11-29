@@ -576,24 +576,81 @@ html, body{
   padding: 8px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid white;
-}
-#reelLeftIcon i{
-  font-size: 24px;
-}
-#reelLeftIcon p{
-  font-size: 10px;
-  font-weight: 500;
+  align-items: flex-end;
+  /* border: 2px solid white; */
 }
 #reelLeftImg{
   height: 24px;
   width: 24px;
-  border: 2px solid white;
-  border-radius: 6px;
+  border-radius: 50px;
   overflow: hidden;
 }
 #reelLeftImg img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+#reelBtn{
+  border: 1px solid white;
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#reelRightIcon i{
+  font-size: 24px;
+}
+#reelRightIcon p{
+  font-size: 10px;
+  font-weight: 500;
+}
+#reelRightImg{
+  height: 24px;
+  width: 24px;
+  border: 2px solid white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#reelRightImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#searchImgView{
+  color: white;
+  height: 535px;
+  width: 346px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* border: 2px solid white; */
+}
+#searchLeftImg{
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+#searchLeftImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#searchViewBtn{
+  border: 1px solid white;
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#searchRightIcon i{
+  font-size: 24px;
+}
+#searchRightIcon p{
+  font-size: 10px;
+  font-weight: 500;
 }

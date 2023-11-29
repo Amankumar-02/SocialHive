@@ -116,10 +116,24 @@ function Reels() {
                       <div id="reelsImg">
                       <img src={src.dp} alt={index} />
                       <div id="reelOver" className="absolute">
-                        <div>
-                          left
+                        <div id="reelLeftText">
+                          <div className="flex items-center">
+                          <div id="reelLeftImg">
+                            <img src={src.dp} alt="" />
+                          </div>
+                          <p className="text-sm ps-2">your.creatorStudio</p>
+                          <button id="reelBtn">Follow</button>
+                          </div>
+                          <div className="pt-3 pb-1">
+                            <p className="text-xs">Whispers of the soul.</p>
+                          </div>
+                          <div className="flex items-center">
+                          <i className="ri-music-2-fill text-[10px] px-1 text-white"></i>
+                          <p className="text-[10px]">bryanlowwww • Original audio</p>
+                          </div>
+
                         </div>
-                        <div id="reelLeftIcon" className="flex flex-col items-center justify-center">
+                        <div id="reelRightIcon" className="flex flex-col items-center justify-center">
                         {/* <i class="ri-heart-line"></i> */}
                         <i class="ri-heart-fill text-red-600"></i>
                         <p>
@@ -130,7 +144,7 @@ function Reels() {
                         <i class="ri-send-plane-line"></i>
                         <p>{Math.floor(Math.random()*1000)}</p>
                         <i class="ri-list-check"></i>
-                        <div id="reelLeftImg">
+                        <div id="reelRightImg">
                           <img src={src.dp} alt="" />
                         </div>
                         </div>

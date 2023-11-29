@@ -116,6 +116,35 @@ function Search() {
                 //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
                 // }
               >
+                <div id="searchImgView">
+                {/* <div id="reelOver" className="absolute"> */}
+                        <div id="searchLeftText">
+                          <div className="flex items-center">
+                          <div id="searchLeftImg">
+                            <img src='https://plus.unsplash.com/premium_photo-1673329271063-74cda8398912?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt="" />
+                          </div>
+                          <p className="text-sm ps-2">your.creatorStudio</p>
+                          <button id="searchViewBtn">Follow</button>
+                          </div>
+                          <div className="pt-3 pb-1">
+                            <p className="text-xs">Whispers of the soul.</p>
+                          </div>
+
+                        </div>
+                        <div id="searchRightIcon" className="flex flex-col items-center justify-center">
+                        {/* <i class="ri-heart-line"></i> */}
+                        <i class="ri-heart-fill text-red-600"></i>
+                        <p>
+                        {Math.floor(Math.random()*10000)}
+                          </p>
+                        <i class="ri-chat-3-line"></i>
+                        <p>{Math.floor(Math.random()*1000)}</p>
+                        <i class="ri-send-plane-line"></i>
+                        <p>{Math.floor(Math.random()*1000)}</p>
+                        <i class="ri-list-check"></i>
+                        </div>
+                      {/* </div> */}
+                </div>
               </div>
               <div id="search">
                   <div id="searchBar">
