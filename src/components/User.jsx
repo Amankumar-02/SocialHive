@@ -186,9 +186,15 @@ function User() {
                     </div>
                   </div>
                 </div>
-                <div id="second" className="flex justify-center">
-                  <button className="bg-regal-blue px-5 text-white rounded-lg mb-4">
-                    Add
+                <div id="second" className="flex justify-center px-1">
+                  <button className="bg-gray-300 text-sm px-6 rounded-lg mb-4">
+                    Edit Profile
+                  </button>
+                  <button className="bg-gray-300 text-sm px-6 rounded-lg mb-4 ms-2">
+                    Share Profile
+                  </button>
+                  <button className="bg-gray-300 px-5 rounded-lg mb-4 ms-2">
+                  <i class="ri-user-add-line"></i>
                   </button>
                 </div>
                 <div
