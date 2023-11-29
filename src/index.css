@@ -564,3 +564,36 @@ html, body{
   border-radius: 50%;
   border: 2px solid white;
 }
+#reelsImg{
+  position: relative;
+  height: 443px;
+}
+#reelOver{
+  position: absolute;
+  color: white;
+  top: 210px;
+  width: 346px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+}
+#reelLeftIcon i{
+  font-size: 24px;
+}
+#reelLeftIcon p{
+  font-size: 10px;
+  font-weight: 500;
+}
+#reelLeftImg{
+  height: 24px;
+  width: 24px;
+  border: 2px solid white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#reelLeftImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

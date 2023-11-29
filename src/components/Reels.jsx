@@ -10,22 +10,22 @@ function Reels() {
   // declare images
   const postImg = [
     {
-      dp: "https://images.unsplash.com/photo-1671811988458-95441face9d9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      dp: "https://images.unsplash.com/photo-1528491836309-55b4a140b78a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      dp: "https://images.unsplash.com/photo-1625231334168-35067f8853ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      dp: "https://images.unsplash.com/photo-1536995769641-12e9f98fd223?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      dp: "https://media.tenor.com/lgLtVbUlDjkAAAAC/fantic-af.gif",
+      dp: "https://images.unsplash.com/photo-1511167966586-4942d18c6f40?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      dp: "https://images.unsplash.com/photo-1676196919586-32234be2a211?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      dp: "https://images.unsplash.com/photo-1524704088085-cfbde9454330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      dp: "https://media.tenor.com/xYJLQil6oQ8AAAAC/duck-season-rabbit-season.gif",
+      dp: "https://images.unsplash.com/photo-1624602434823-584645165f47?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -113,7 +113,27 @@ function Reels() {
                 <div id="reelContainer">
                   {postImg.map((src, index) => (
                     <div className="reelTab" key={index}>
+                      <div id="reelsImg">
                       <img src={src.dp} alt={index} />
+                      <div id="reelOver" className="absolute">
+                        <div>
+                          left
+                        </div>
+                        <div id="reelLeftIcon" className="flex flex-col items-center justify-center">
+                        {/* <i class="ri-heart-line"></i> */}
+                        <i class="ri-heart-fill text-red-600"></i>
+                        <p>6,500</p>
+                        <i class="ri-chat-3-line"></i>
+                        <p>6,500</p>
+                        <i class="ri-send-plane-line"></i>
+                        <p>6,500</p>
+                        <i class="ri-list-check"></i>
+                        <div id="reelLeftImg">
+                          <img src={src.dp} alt="" />
+                        </div>
+                        </div>
+                      </div>
+                      </div>
                     </div>
                   ))}
                 </div>

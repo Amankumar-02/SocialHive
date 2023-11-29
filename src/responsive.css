@@ -52,4 +52,11 @@
     #notificationContainer{
       height: 573px;
     }
+    #reelsImg{
+      position: relative;
+      height: 576px;
+    }
+    #reelOver{
+      top: 343px;
+    }
 }
