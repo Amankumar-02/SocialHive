@@ -42,11 +42,18 @@ function FooterBar() {
 
                 <NavLink
                   to="/user"
-                  className={({ isActive }) =>
-                    `${isActive ? "font-extrabold" : "font-normal"}`
-                  }
+                  // className={({ isActive }) =>
+                  //   `${isActive ? "border-black" : "border-white"}`
+                  // }
+                  style={({ isActive }) => ({
+                    border: isActive ? '2px solid #D1D5DB' : 'none',
+                    borderRadius: isActive ? '50%' : 'none',
+                  })}
                 >
-                  <i className="ri-user-line"></i>
+                  {/* <i className="ri-user-line"></i> */}
+                  <div id='bottomLastProfile'>
+                    <img src="https://images.unsplash.com/photo-1635586409095-b5d87cebe12b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                  </div>
                 </NavLink>
               </div>
   )

@@ -28,13 +28,13 @@
     /* #userContainer{
       height: 365px;
     } */
-    #main-message{
+    /* #main-message{
       height: 440px;
       padding-top: 2rem;
-    }
-    #msgMiddleBar{
+    } */
+    /* #msgMiddleBar{
       height: 540px;
-    }
+    } */
     .contactIcon2 img{
       padding: 0px 6px;
       height: 25px;
@@ -49,14 +49,14 @@
     /* #addContainer{
       height: 573px;
     } */
-    #notificationContainer{
+    /* #notificationContainer{
       height: 573px;
-    }
-    #reelsImg{
+    } */
+    /* #reelsImg{
       position: relative;
       height: 576px;
-    }
-    #reelOver{
+    } */
+    /* #reelOver{
       top: 343px;
-    }
+    } */
 }

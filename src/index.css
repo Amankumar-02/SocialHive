@@ -326,12 +326,15 @@ html, body{
 #reelContainer::-webkit-scrollbar{
   display: none;
 }
-.reelTab img{
+.reelsImg img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
+.reelsImg{
+  position: relative;
+  height: 100%;
+}
 
 
 
@@ -436,7 +439,8 @@ html, body{
   border-radius: 50px;
 }
 #main-message{
-  height: 300px;
+  height: calc(100% - 208px);
+  /* height: 328px; */
   width: 100%;
   white-space: nowrap;
   overflow-x: hidden;
@@ -467,8 +471,8 @@ html, body{
   object-fit: cover;
 }
 #msgMiddleBar{
-  height: 410px;
-  /* height: 100px; */
+  /* height: 410px; */
+  height: calc(100% - 130px);
   width: 100%;
   white-space: nowrap;
   overflow-x: hidden;
@@ -521,7 +525,8 @@ html, body{
   color: red;
 }
 #notificationContainer{
-  height: 440px;
+  /* height: 440px; */
+  height: calc(100% - 93px);
   padding: 8px;
 }
 .notificationImg{
@@ -564,14 +569,11 @@ html, body{
   border-radius: 50%;
   border: 2px solid white;
 }
-#reelsImg{
-  position: relative;
-  height: 443px;
-}
 #reelOver{
   position: absolute;
   color: white;
-  top: 210px;
+  /* top: 210px; */
+  top: calc(100% - 230px);
   width: 346px;
   padding: 8px;
   display: flex;
@@ -655,4 +657,17 @@ html, body{
 #searchRightIcon p{
   font-size: 10px;
   font-weight: 500;
+}
+
+#bottomLastProfile{
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  /* border: 1px solid white; */
+  overflow: hidden;
+}
+#bottomLastProfile img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

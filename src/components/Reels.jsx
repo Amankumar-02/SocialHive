@@ -8,14 +8,20 @@ import FooterBar from "./FooterBar";
 
 function Reels() {
   // declare images
-  const postImg = [
+  const [postImg, setpostImg] = useState([
     {
       dp: "https://images.unsplash.com/photo-1536995769641-12e9f98fd223?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       profileDp:"https://images.unsplash.com/photo-1594712407746-da507d32f4ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       nameText:"your.creatorStudio",
       caption:"Whispers of the soul.",
       song:"bryanlowwww",
-      isFollowing: false
+      id:"1",
+      isFollowing: false,
+      value:{
+        one: `42k`,
+        two: `1,520`,
+        three: `631`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -23,7 +29,13 @@ function Reels() {
       nameText:"olivia_bennett",
       caption:`"Jingle Bell & Marry Christmas"`,
       song:"midnight_echo",
-      isFollowing: false
+      id:"2",
+      isFollowing: false,
+      value:{
+        one: `22k`,
+        two: `4,520`,
+        three: `331`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1511167966586-4942d18c6f40?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -31,7 +43,13 @@ function Reels() {
       nameText:"Xavier_Rodriguez",
       caption:"Embracing serendipity's charm",
       song:"crystal.dreams",
-      isFollowing: false
+      id:"3",
+      isFollowing: false,
+      value:{
+        one: `12k`,
+        two: `520`,
+        three: `31`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1524704088085-cfbde9454330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -39,7 +57,13 @@ function Reels() {
       nameText:"Joshua_Thompson",
       caption:`"Journey to the unknown"`,
       song:"solar_serenade",
-      isFollowing: false
+      id:"4",
+      isFollowing: false,
+      value:{
+        one: `8.6k`,
+        two: `2,320`,
+        three: `621`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1624602434823-584645165f47?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -47,7 +71,13 @@ function Reels() {
       nameText:"isabella_rivera",
       caption:`"Lost in city lights"`,
       song:"cosmic_cascade",
-      isFollowing: false
+      id:"5",
+      isFollowing: false,
+      value:{
+        one: `17k`,
+        two: `720`,
+        three: `131`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1528491836309-55b4a140b78a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -55,14 +85,19 @@ function Reels() {
       nameText:"Ava_Martinez",
       caption:"Waves of tranquil thoughts",
       song:"crimson.reverie",
-      isFollowing: false
+      id:"5",
+      isFollowing: false,
+      value:{
+        one: `2.5k`,
+        two: `820`,
+        three: `431`,
+      },
     },
-  ];
+  ]);
 
   //declare variables
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState();
-  // const [buttons, setButtons] = useState([{id:1, isFollowing: false},{id:2, isFollowing: false},{id:3, isFollowing: false},{id:4, isFollowing: false},{id:5, isFollowing: false},]);
   const goBack = () => {
     window.history.back();
   };
@@ -91,15 +126,15 @@ function Reels() {
       toast.error(error.message);
     }
   };
-  // const textToggle = (id) => {
-  //   setButtons((prevButtons) =>
-  //     prevButtons.map((button) =>
-  //       button.id === id
-  //         ? { ...button, isFollowing: !button.isFollowing }
-  //         : button
-  //     )
-  //   );
-  // };
+  const textToggle = (e, id) => {
+    setpostImg((prevButtons) =>
+    prevButtons.map((button) =>
+    button.id === id
+    ? { ...button, isFollowing: !button.isFollowing }
+    : button
+    )
+    );
+  };
   return (
     <>
       {userDetails ? (
@@ -134,8 +169,8 @@ function Reels() {
               {/* <div id="reels"> */}
                 <div id="reelContainer">
                   {postImg.map((src, index) => (
-                    <div className="reelTab" key={index}>
-                      <div id="reelsImg">
+                    // <div className="reelTab">
+                      <div key={index} className="reelsImg">
                       <img src={src.dp} alt={index} />
                       <div id="reelOver" className="absolute">
                         <div id="reelLeftText">
@@ -144,14 +179,14 @@ function Reels() {
                             <img src={src.profileDp} alt="" />
                           </div>
                           <p className="text-sm ps-2">{src.nameText}</p>
-                          <button id="reelBtn">
+                          {/* <button id="reelBtn">
                             Follow 
-                            </button>
-                            {/* {buttons.map((button) => (
-                              <button key={button.id} onClick={() => textToggle(button.id)}>
-                                {button.isFollowing ? 'Following' : 'Follow'}
+                            </button> */}
+                            {/* {buttons.map((button) => ( */}
+                              <button id="reelBtn" key={src.id} onClick={(e) => textToggle(e, src.id)}>
+                                {src.isFollowing ? 'Following' : 'Follow'}
                               </button>
-                            ))} */}
+                            {/* ))} */}
                           </div>
                           <div className="pt-3 pb-1">
                             <p className="text-xs">{src.caption}</p>
@@ -166,12 +201,19 @@ function Reels() {
                         {/* <i className="ri-heart-line"></i> */}
                         <i className="ri-heart-fill text-red-600 cursor-pointer"></i>
                         <p>
-                        {Math.floor(Math.random()*10000)}
+                        {src.value.one}
+                        {/* {Math.floor(Math.random()*10000)} */}
                           </p>
                         <i className="ri-chat-3-line cursor-pointer"></i>
-                        <p>{Math.floor(Math.random()*1000)}</p>
+                        <p>
+                          {src.value.two}
+                          {/* {Math.floor(Math.random()*1000)} */}
+                          </p>
                         <i className="ri-send-plane-line cursor-pointer"></i>
-                        <p>{Math.floor(Math.random()*1000)}</p>
+                        <p>
+                          {src.value.three}
+                          {/* {Math.floor(Math.random()*1000)} */}
+                        </p>
                         <i className="ri-list-check cursor-pointer"></i>
                         <div id="reelRightImg">
                           <img src={src.dp} alt="" />
@@ -179,7 +221,7 @@ function Reels() {
                         </div>
                       </div>
                       </div>
-                    </div>
+                    // </div>
                   ))}
                 </div>
               <FooterBar/>

@@ -67,6 +67,9 @@ function Messages() {
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState();
   const [contactMsg, setContactMsg] = useState([])
+  const goBack = () => {
+    window.history.back();
+  };
 
   // declare the styles
   const [fullScreen, setFullScreen] = useState({
@@ -144,7 +147,7 @@ function Messages() {
                 >
                   <div className="flex items-center justify-evenly ">
                     <i
-                      className="ri-arrow-left-line text-xl"
+                      className="ri-arrow-left-line text-xl cursor-pointer"
                       onClick={() => {
                         setFullScreen({
                           transform: "scale(0)",
@@ -158,8 +161,8 @@ function Messages() {
                     <p>{contactMsg.contactName}</p>
                   </div>
                   <div className="flex items-center justify-end contactIcon">
-                    <img src={call} />
-                    <img className="pe-0" src={vc} />
+                    <img src={call} className="cursor-pointer"/>
+                    <img className="cursor-pointer" src={vc} />
                   </div>
                 </div>
                 <div id="msgMiddleBar" className="px-2 py-4">
@@ -197,7 +200,7 @@ function Messages() {
                         id="cameraIconId"
                         className="flex items-center justify-center bg-regal-blue w-11 rounded-xl"
                       >
-                        <i className="ri-camera-fill text-white text-lg"></i>
+                        <i className="ri-camera-fill text-white text-lg cursor-pointer"></i>
                       </div>
                       <input
                         type="text"
@@ -205,9 +208,9 @@ function Messages() {
                         className="bg-transparent"
                       />
                       <div className="contactIcon2 flex justify-end items-center">
-                        <img src={mike} alt="" />
-                        <img src={gallary} alt="" />
-                        <img className="pe-0" src={attach} alt="" />
+                        <img src={mike} alt="" className="cursor-pointer"/>
+                        <img src={gallary} alt="" className="cursor-pointer"/>
+                        <img className="cursor-pointer" src={attach} alt="" />
                       </div>
                     </div>
                   </div>
@@ -216,9 +219,9 @@ function Messages() {
 
               <div id="topBar">
                 <div className="flex items-center justify-center">
-                  <Link to="/profile">
-                    <i className="ri-arrow-left-line text-xl"></i>
-                  </Link>
+                  {/* <Link to="/profile"> */}
+                    <i className="ri-arrow-left-line text-xl cursor-pointer" onClick={goBack}></i>
+                  {/* </Link> */}
                   <p className="text-xl ps-2 flex items-center justify-center">
                     {userDetails.name}
                     <svg
@@ -242,8 +245,8 @@ function Messages() {
                   </p>
                 </div>
                 <div id="topIcons">
-                  <i className="ri-video-add-line"></i>
-                  <i className="ri-file-edit-line"></i>
+                  <i className="ri-video-add-line cursor-pointer"></i>
+                  <i className="ri-file-edit-line cursor-pointer"></i>
                 </div>
               </div>
               <div id="msgBar" className="bg-gray-300">
@@ -274,7 +277,7 @@ function Messages() {
                     className="flex items-center justify-between px-2 py-1"
                     onClick={() => clickEvent(index)}
                   >
-                    <div className="contactMembers">
+                    <div className="contactMembers cursor-pointer">
                       <div className="contactImg">
                         <img src={src.dp} alt={`contact${index}`} />
                       </div>
