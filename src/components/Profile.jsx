@@ -158,66 +158,6 @@ function Profile() {
   };
 
   return (
-    // <>
-    // {userDetails? (
-    //   <>
-    //   <div className="min-h-min max-w-7xl mx-auto shadow-md flex justify-between text-left py-3 px-3 mt-2 rounded-md">
-    //         <div>
-    //           <p className="text-xl">Hello {userDetails.name}</p>
-    //           <p className="">{userDetails.email}</p>
-    //         </div>
-    //         <div>
-    //           <button className="bg-red-400 text-white p-1 rounded-md" onClick={logoutUser}>
-    //             Logout
-    //           </button>
-    //         </div>
-    //       </div>
-    //   <div className="container">
-    //   <div id="card">
-    //     <div
-    //       id="fullScreen"
-    //       style={fullScreen}
-    //       // onClick={() =>
-    //       //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
-    //       // }
-    //     ></div>
-    //     <div id="main-story">
-    //       {img.map((src, index) => (
-    //         <Stories
-    //           key={index}
-    //           src={src}
-    //           alt={`story${index + 1}`}
-    //           id={index}
-    //           clickEvent={() => clickEvent(index)}
-    //         />
-    //       ))}
-    //     </div>
-    //     <div id="main-posts">
-    //       {postImg.map((src, index) => (
-    //         <Post
-    //           key={index}
-    //           likeStyle={like}
-    //           src={src}
-    //           alt={`post${index + 1}`}
-    //           id={index}
-    //           dblClickEvent={() => dblClick(index)}
-    //         />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
-    // </>
-    // ) : (
-    //   <p className="mt-4">
-    //     Please Login To see Profile{" "}
-    //     <Link to="/">
-    //       <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
-    //         Login
-    //       </span>
-    //     </Link>
-    //   </p>
-    // )}
-    // </>
     <>
       {userDetails ? (
         <>
@@ -251,22 +191,23 @@ function Profile() {
               ></div>
               <div id="topBar">
                 <div id="topImg">
-                  <Link to="/profile">
+                  <Link to="/profile" className="cursor-auto">
                   <img
                     src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
                     alt="Insta Icon"
+                    className="cursor-pointer"
                     />
                     </Link>
                 </div>
                 <div id="topIcons">
-                  <NavLink to="/add">
-                  <i className="ri-add-box-line"></i>
+                  <NavLink to="/add" className="cursor-auto">
+                  <i className="ri-add-box-line cursor-pointer"></i>
                   </NavLink>
-                  <NavLink to="/notifications">
-                  <i className="ri-heart-line"></i>
+                  <NavLink to="/notifications" className="cursor-auto">
+                  <i className="ri-heart-line cursor-pointer"></i>
                   </NavLink>
-                  <Link to="/messages">
-                  <i className="ri-messenger-line"></i>
+                  <Link to="/messages" className="cursor-auto">
+                  <i className="ri-messenger-line cursor-pointer"></i>
                   </Link>
                 </div>
               </div>

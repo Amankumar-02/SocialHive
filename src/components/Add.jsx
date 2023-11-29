@@ -84,22 +84,23 @@ function Add() {
             <div id="card">
               <div id="topBar">
                 <div id="topImg">
-                  <Link to="/profile">
-                    <img
-                      src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
-                      alt="Insta Icon"
+                  <Link to="/profile" className="cursor-auto">
+                  <img
+                    src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
+                    alt="Insta Icon"
+                    className="cursor-pointer"
                     />
-                  </Link>
+                    </Link>
                 </div>
                 <div id="topIcons">
-                  <NavLink to="/add">
-                    <i className="ri-add-box-line"></i>
+                  <NavLink to="/add" className="cursor-auto">
+                  <i className="ri-add-box-line cursor-pointer"></i>
                   </NavLink>
-                  <NavLink to="/notifications">
-                    <i className="ri-heart-line"></i>
+                  <NavLink to="/notifications" className="cursor-auto">
+                  <i className="ri-heart-line cursor-pointer"></i>
                   </NavLink>
-                  <Link to="/messages">
-                    <i className="ri-messenger-line"></i>
+                  <Link to="/messages" className="cursor-auto">
+                  <i className="ri-messenger-line cursor-pointer"></i>
                   </Link>
                 </div>
               </div>
