@@ -80,9 +80,9 @@ function Search() {
     });
 
     //declare the timeout call
-    setTimeout(() => {
-      setFullScreen({ transform: "scale(0)", backgroundImage: "none" });
-    }, 2000);
+    // setTimeout(() => {
+    //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" });
+    // }, 2000);
   };
   return (
     <>
@@ -116,6 +116,10 @@ function Search() {
                 //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
                 // }
               >
+                <div id="topSearchViewBar">
+                  <i className="ri-arrow-left-line text-xl text-white cursor-pointer" onClick={()=>setFullScreen({transform: "scale(0)", backgroundImage: "none"})}></i>
+                  <p className="text-lg ps-4 font-semibold text-white">Explore</p>
+                </div>
                 <div id="searchImgView">
                 {/* <div id="reelOver" className="absolute"> */}
                         <div id="searchLeftText">
@@ -133,20 +137,20 @@ function Search() {
                         </div>
                         <div id="searchRightIcon" className="flex flex-col items-center justify-center">
                         {/* <i class="ri-heart-line"></i> */}
-                        <i class="ri-heart-fill text-red-600"></i>
+                        <i class="ri-heart-fill text-red-600 cursor-pointer"></i>
                         <p>
                         {Math.floor(Math.random()*10000)}
                           </p>
-                        <i class="ri-chat-3-line"></i>
+                        <i class="ri-chat-3-line cursor-pointer"></i>
                         <p>{Math.floor(Math.random()*1000)}</p>
-                        <i class="ri-send-plane-line"></i>
+                        <i class="ri-send-plane-line cursor-pointer"></i>
                         <p>{Math.floor(Math.random()*1000)}</p>
-                        <i class="ri-list-check"></i>
+                        <i class="ri-list-check cursor-pointer"></i>
                         </div>
                       {/* </div> */}
                 </div>
               </div>
-              <div id="search">
+              {/* <div id="search"> */}
                   <div id="searchBar">
                     <i className="ri-search-line"></i>
                     <input type="text" placeholder="Search"/>
@@ -158,7 +162,7 @@ function Search() {
                   </div>
                 ))}
                 </div>
-              </div>
+              {/* </div> */}
               <FooterBar/>
               {/* <div id="bottomBar">
                 <NavLink to="/profile" className={({isActive})=>`${isActive ? "font-extrabold" : "font-normal"}`}>

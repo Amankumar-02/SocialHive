@@ -81,7 +81,7 @@ html, body{
   justify-content: space-between;
   padding: 10px 15px 0px 15px;
 }
-#topReelBar, #topNotificationBar{
+#topSearchViewBar, #topReelBar, #topNotificationBar{
   display: flex;
   align-items: center;
   padding: 10px 15px 10px 15px;
@@ -258,7 +258,7 @@ html, body{
   margin-bottom: 20px;
 }
 #bottomBar{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -287,14 +287,13 @@ html, body{
   outline: none;
 }
 #searchContainer{
-  height: 437px;
-  /* height: calc(100% - 400px); */
+  /* height: 437px; */
+  height: calc(100% - 99px);
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 3.5px;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: none;
@@ -316,7 +315,8 @@ html, body{
 
 /* reels page */
 #reelContainer{
-  height: 443px;
+  /* height: 443px; */
+  height: calc(100% - 93px);
   width: 100%;
   white-space: nowrap;
   overflow-x: hidden;
@@ -338,14 +338,13 @@ html, body{
 
 
 #userContainer{
-  height: 232px;
-  /* height: calc(100% - 400px); */
+  /* height: 232px; */
+  height: calc(100% - 305px);
   width: 100%;
   display: flex;
   align-items:center;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 3.5px;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: none;
@@ -512,7 +511,8 @@ html, body{
 }
 
 #addContainer{
-  height: 440px;
+  /* height: 440px; */
+  height: calc(100% - 96px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -621,7 +621,9 @@ html, body{
 
 #searchImgView{
   color: white;
-  height: 535px;
+  /* height: 535px; */
+  height: calc(100% - 50px);
+  /* height: calc(100% - 40px); */
   width: 346px;
   padding: 8px;
   display: flex;

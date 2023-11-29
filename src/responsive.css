@@ -19,15 +19,15 @@
     #instaImg{
       display: none;
     }
-    #searchContainer{
+    /* #searchContainer{
       height: 570px;
-    }
-    #reelContainer{
+    } */
+    /* #reelContainer{
       height: 576px;
-    }
-    #userContainer{
+    } */
+    /* #userContainer{
       height: 365px;
-    }
+    } */
     #main-message{
       height: 440px;
       padding-top: 2rem;
@@ -46,9 +46,9 @@
     #msgContactBar{
       padding: 10px;
     }
-    #addContainer{
+    /* #addContainer{
       height: 573px;
-    }
+    } */
     #notificationContainer{
       height: 573px;
     }

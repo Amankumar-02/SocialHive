@@ -36,6 +36,9 @@ function User() {
     {
       dp: "https://images.unsplash.com/photo-1519428163141-d3f71425125a?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    {
+      dp: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
 
   //declare variables
@@ -151,7 +154,7 @@ function User() {
                 </div>
               </div>
               
-              <div id="userDets">
+              {/* <div id="userDets"> */}
                 <div id="first" className="flex items-start justify-evenly p-4">
                   <div>
                     <div style={{ height: "60px", width: "60px" }}>
@@ -235,20 +238,22 @@ function User() {
                     </svg>
                   </div>
                 </div>
-                <div id="four">
+                {/* <div id="four"> */}
                   <div id="userContainer">
+                    {/* <div id="userContainer2"> */}
                     {postImg.map((src, index) => (
                       <div className="userTab" key={index}>
                         <img
                           src={src.dp}
                           alt={index}
                           onClick={() => clickEvent(index)}
-                        />
+                          />
                       </div>
                     ))}
+                    {/* </div> */}
                   </div>
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
               <FooterBar/>
               {/* <div id="bottomBar">
                 <NavLink

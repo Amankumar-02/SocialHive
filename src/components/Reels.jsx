@@ -11,27 +11,61 @@ function Reels() {
   const postImg = [
     {
       dp: "https://images.unsplash.com/photo-1536995769641-12e9f98fd223?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      profileDp:"https://images.unsplash.com/photo-1594712407746-da507d32f4ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nameText:"your.creatorStudio",
+      caption:"Whispers of the soul.",
+      song:"bryanlowwww",
+      isFollowing: false
     },
     {
       dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      profileDp:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nameText:"olivia_bennett",
+      caption:`"Jingle Bell & Marry Christmas"`,
+      song:"midnight_echo",
+      isFollowing: false
     },
     {
       dp: "https://images.unsplash.com/photo-1511167966586-4942d18c6f40?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      profileDp:"https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nameText:"Xavier_Rodriguez",
+      caption:"Embracing serendipity's charm",
+      song:"crystal.dreams",
+      isFollowing: false
     },
     {
       dp: "https://images.unsplash.com/photo-1524704088085-cfbde9454330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      profileDp:"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nameText:"Joshua_Thompson",
+      caption:`"Journey to the unknown"`,
+      song:"solar_serenade",
+      isFollowing: false
     },
     {
       dp: "https://images.unsplash.com/photo-1624602434823-584645165f47?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      profileDp:"https://images.unsplash.com/photo-1494354145959-25cb82edf23d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nameText:"isabella_rivera",
+      caption:`"Lost in city lights"`,
+      song:"cosmic_cascade",
+      isFollowing: false
     },
     {
       dp: "https://images.unsplash.com/photo-1528491836309-55b4a140b78a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      profileDp:"https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nameText:"Ava_Martinez",
+      caption:"Waves of tranquil thoughts",
+      song:"crimson.reverie",
+      isFollowing: false
     },
   ];
 
   //declare variables
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState();
+  // const [buttons, setButtons] = useState([{id:1, isFollowing: false},{id:2, isFollowing: false},{id:3, isFollowing: false},{id:4, isFollowing: false},{id:5, isFollowing: false},]);
+  const goBack = () => {
+    window.history.back();
+  };
 
   //declare auth methods
   useEffect(() => {
@@ -57,6 +91,15 @@ function Reels() {
       toast.error(error.message);
     }
   };
+  // const textToggle = (id) => {
+  //   setButtons((prevButtons) =>
+  //     prevButtons.map((button) =>
+  //       button.id === id
+  //         ? { ...button, isFollowing: !button.isFollowing }
+  //         : button
+  //     )
+  //   );
+  // };
   return (
     <>
       {userDetails ? (
@@ -82,34 +125,13 @@ function Reels() {
           </div>
           <div className="container">
             <div id="card">
-              {/* <div id="topBar">
-                <div id="topImg">
-                  <Link to="/profile">
-                    <img
-                      src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
-                      alt="Insta Icon"
-                    />
-                  </Link>
-                </div>
-                <div id="topIcons">
-                  <NavLink to="/add">
-                  <i className="ri-add-box-line"></i>
-                  </NavLink>
-                  <NavLink to="/notifications">
-                  <i className="ri-heart-line"></i>
-                  </NavLink>
-                  <Link to="/messages">
-                    <i className="ri-messenger-line"></i>
-                  </Link>
-                </div>
-              </div> */}
               <div id="topReelBar">
-                  <Link to="/profile">
-                  <i className="ri-arrow-left-line text-xl" ></i>
-                  </Link>
+                  {/* <Link to="/profile"> */}
+                  <i className="ri-arrow-left-line text-xl cursor-pointer" onClick={goBack}></i>
+                  {/* </Link> */}
                   <p className="text-lg ps-4 font-semibold">Reels</p>
               </div>
-              <div id="reels">
+              {/* <div id="reels"> */}
                 <div id="reelContainer">
                   {postImg.map((src, index) => (
                     <div className="reelTab" key={index}>
@@ -119,31 +141,38 @@ function Reels() {
                         <div id="reelLeftText">
                           <div className="flex items-center">
                           <div id="reelLeftImg">
-                            <img src={src.dp} alt="" />
+                            <img src={src.profileDp} alt="" />
                           </div>
-                          <p className="text-sm ps-2">your.creatorStudio</p>
-                          <button id="reelBtn">Follow</button>
+                          <p className="text-sm ps-2">{src.nameText}</p>
+                          <button id="reelBtn">
+                            Follow 
+                            </button>
+                            {/* {buttons.map((button) => (
+                              <button key={button.id} onClick={() => textToggle(button.id)}>
+                                {button.isFollowing ? 'Following' : 'Follow'}
+                              </button>
+                            ))} */}
                           </div>
                           <div className="pt-3 pb-1">
-                            <p className="text-xs">Whispers of the soul.</p>
+                            <p className="text-xs">{src.caption}</p>
                           </div>
                           <div className="flex items-center">
-                          <i className="ri-music-2-fill text-[10px] px-1 text-white"></i>
-                          <p className="text-[10px]">bryanlowwww • Original audio</p>
+                          <i className="ri-music-2-fill text-[10px] px-1 text-white cursor-pointer"></i>
+                          <p className="text-[10px]">{src.song} • Original audio</p>
                           </div>
 
                         </div>
                         <div id="reelRightIcon" className="flex flex-col items-center justify-center">
-                        {/* <i class="ri-heart-line"></i> */}
-                        <i class="ri-heart-fill text-red-600"></i>
+                        {/* <i className="ri-heart-line"></i> */}
+                        <i className="ri-heart-fill text-red-600 cursor-pointer"></i>
                         <p>
                         {Math.floor(Math.random()*10000)}
                           </p>
-                        <i class="ri-chat-3-line"></i>
+                        <i className="ri-chat-3-line cursor-pointer"></i>
                         <p>{Math.floor(Math.random()*1000)}</p>
-                        <i class="ri-send-plane-line"></i>
+                        <i className="ri-send-plane-line cursor-pointer"></i>
                         <p>{Math.floor(Math.random()*1000)}</p>
-                        <i class="ri-list-check"></i>
+                        <i className="ri-list-check cursor-pointer"></i>
                         <div id="reelRightImg">
                           <img src={src.dp} alt="" />
                         </div>
@@ -153,53 +182,7 @@ function Reels() {
                     </div>
                   ))}
                 </div>
-              </div>
               <FooterBar/>
-              {/* <div id="bottomBar">
-                <NavLink
-                  to="/profile"
-                  className={({ isActive }) =>
-                    `${isActive ? "font-extrabold" : "font-normal"}`
-                  }
-                >
-                  <i className="ri-home-4-line"></i>
-                </NavLink>
-
-                <NavLink
-                  to="/search"
-                  className={({ isActive }) =>
-                    `${isActive ? "font-extrabold" : "font-normal"}`
-                  }
-                >
-                  <i className="ri-search-line"></i>
-                </NavLink>
-
-                <NavLink to="/add"
-                  className={({ isActive }) =>
-                    `${isActive ? "font-extrabold" : "font-normal"}`
-                  }
-                >
-                  <i className="ri-add-box-line"></i>
-                </NavLink>
-
-                <NavLink
-                  to="/reels"
-                  className={({ isActive }) =>
-                    `${isActive ? "font-extrabold" : "font-normal"}`
-                  }
-                >
-                  <i className="ri-instagram-line"></i>
-                </NavLink>
-
-                <NavLink
-                  to="/user"
-                  className={({ isActive }) =>
-                    `${isActive ? "font-extrabold" : "font-normal"}`
-                  }
-                >
-                  <i className="ri-user-line"></i>
-                </NavLink>
-              </div> */}
             </div>
           </div>
         </>
