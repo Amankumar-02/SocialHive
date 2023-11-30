@@ -5,6 +5,7 @@ function Post({
     src,
     alt,
     dblClickEvent,
+    clickEvent2,
 }) {
   return (
     <>
@@ -21,13 +22,16 @@ function Post({
             <i className="ri-more-line"></i>
           </div>
       </div>
-      <div className="post">
-        <img src={src.dp} alt={alt} onDoubleClick={dblClickEvent} />
+      <div className="post" >
+        <img src={src.dp} alt={alt} 
+        onDoubleClick={dblClickEvent} 
+        />
         <i className="ri-heart-3-fill" style={likeStyle}></i>
       </div>
       <div className="icons">
-        {/* <i className="ri-heart-line" id='heart'></i> */}
-        <i className="ri-heart-fill" id="heart"></i>
+        <div key={src.id} className='inline-block' onClick={ clickEvent2}>
+        {src.isLike ? <i className="ri-heart-fill cursor-pointer" id="heart"></i> : <i className="ri-heart-line cursor-pointer"></i>}
+        </div>
         <i className="ri-chat-3-line"></i>
         <i className="ri-share-line"></i>
       </div>

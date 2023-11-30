@@ -54,7 +54,7 @@ function Profile() {
         text:"Lottie_Ever",
     },
   ];
-  const postImg = [
+  const [postImg, setpostImg] = useState([
     {
       userDp:
         "https://images.unsplash.com/photo-1542295856-082da537cda4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -62,6 +62,8 @@ function Profile() {
       dp: "https://plus.unsplash.com/premium_photo-1700398530598-0cfb9fc051b1?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       like: "1,68,620 likes",
       text: "festive cake with almonds and a cup of coffee on a brown ceramic plate",
+      id:"1",
+      isLike: false,
     },
     {
       userDp:
@@ -70,6 +72,8 @@ function Profile() {
       dp: "https://images.unsplash.com/photo-1622185135825-d34b40aa03ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       like: "1,20,620 likes",
       text: "Royal Enfield motorbike",
+      id:"2",
+      isLike: false,
     },
     {
       userDp:
@@ -78,6 +82,8 @@ function Profile() {
       dp: "https://images.unsplash.com/photo-1625231334168-35067f8853ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       like: "4,82,620 likes",
       text: "Shelby GT350R",
+      id:"3",
+      isLike: false,
     },
     {
       userDp:
@@ -86,6 +92,8 @@ function Profile() {
       dp: "https://media.tenor.com/lgLtVbUlDjkAAAAC/fantic-af.gif",
       like: "20,592 likes",
       text: "Whats up doc!!!",
+      id:"4",
+      isLike: false,
     },
     {
       userDp:
@@ -94,6 +102,8 @@ function Profile() {
       dp: "https://images.unsplash.com/photo-1676196919586-32234be2a211?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       like: "98,220 likes",
       text: "Illuminating the Night with Mother Nature Experience the magic of bioluminescence in the Maldives and be awed by the glowing waters of k.Huraa Island",
+      id:"5",
+      isLike: false,
     },
     {
       userDp:
@@ -102,8 +112,10 @@ function Profile() {
       dp: "https://media.tenor.com/xYJLQil6oQ8AAAAC/duck-season-rabbit-season.gif",
       like: "3,68,620 likes",
       text: "Duck Season Rabbit Season",
+      id:"6",
+      isLike: false,
     },
-  ];
+  ]);
 
   //declare variables
   const navigate = useNavigate();
@@ -159,13 +171,27 @@ function Profile() {
   };
 
   //like eventHandler
-  const dblClick = () => {
+  const dblClick = (idIndex) => {
+    setpostImg((prevButtons) =>
+    prevButtons.map((button) =>
+    button.id === idIndex
+    ? { ...button, isLike: true }
+    : button
+    ));
     setLike({ transform: `translate(-50%, -50%) scale(1)` });
     setTimeout(() => {
       setLike({ transform: `translate(-50%, -50%) scale(0)` });
     }, 1000);
   };
-
+  const likeToggle = (id) => {
+    setpostImg((prevButtons) =>
+    prevButtons.map((button) =>
+    button.id === id
+    ? { ...button, isLike: !button.isLike }
+    : button
+    )
+    );
+  };
   return (
     <>
       {userDetails ? (
@@ -267,7 +293,8 @@ function Profile() {
                     likeStyle={like}
                     src={src}
                     alt={`post${index + 1}`}
-                    dblClickEvent={() => dblClick(index)}
+                    dblClickEvent={() => dblClick(src.id)}
+                    clickEvent2={() => likeToggle(src.id)}
                   />
                 ))}
               </div>
