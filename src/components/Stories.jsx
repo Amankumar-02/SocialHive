@@ -8,6 +8,7 @@ function Stories({
       <>
         <div className="story">
           <img id={id} src={src.dp} alt={alt} onClick={clickEvent} />
+          <p className="text-[10px] text-center font-semibold">{src.text}</p>
         </div>
       </>
     );

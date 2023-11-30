@@ -151,9 +151,9 @@ function Search() {
                 </div>
               </div>
               {/* <div id="search"> */}
-                  <div id="searchBar">
+                  <div id="searchBar" className="bg-gray-300">
                     <i className="ri-search-line"></i>
-                    <input type="text" placeholder="Search"/>
+                    <input type="text" className="bg-transparent" placeholder="Search"/>
                   </div>
                 <div id="searchContainer">
                 {postImg.map((src, index)=>(

@@ -97,6 +97,37 @@ html, body{
   margin: 0px 10px;
   cursor: pointer;
 }
+#topIcons{
+  position: relative;
+}
+#homeNotfIcon{
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  top: 1px;
+  right: 47px;
+  border-radius: 50%;
+  font-size: 9px;
+}
+#homeMsgIcon{
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  top: 1px;
+  right: 8px;
+  border-radius: 50%;
+  font-size: 9px;
+}
 #postAuth{
   display: flex;
   align-items: center;
@@ -158,6 +189,38 @@ html, body{
 #main-story::-webkit-scrollbar{
   display: none;
 }
+.userStory{
+  position: relative;
+  height: 70px;
+  width: 70px;
+  /* background: linear-gradient(rgb(255, 174, 0), orange, rgb(255, 32, 69), purple, blue); */
+  /* padding: 2.6px; */
+  margin-right: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.userStory img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+#bluePlusIcon{
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  background-color: #0fa0fd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  bottom: 0;
+  left: 50px;
+}
 .story{
   height: 70px;
   width: 70px;
@@ -190,7 +253,7 @@ html, body{
   z-index: 20;
 }
 #main-posts{
-  height: calc(100% - 181px);
+  height: calc(100% - 192px);
   /* height: 320px; */
   width: 100%;
   white-space: nowrap;
@@ -279,8 +342,9 @@ html, body{
   /* justify-content: center; */
   margin: 10px ;
   padding: 4px;
-  border-radius: 50px;
-  border: 1px solid black;
+  /* border-radius: 50px; */
+  border-radius: 10px;
+  /* border: 1px solid black; */
 }
 #searchBar input, #searchBar i{
   margin-left: 10px;
@@ -288,7 +352,7 @@ html, body{
 }
 #searchContainer{
   /* height: 437px; */
-  height: calc(100% - 99px);
+  height: calc(100% - 97px);
   width: 100%;
   display: flex;
   align-items: center;
