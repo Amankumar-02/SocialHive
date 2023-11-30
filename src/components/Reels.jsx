@@ -17,6 +17,7 @@ function Reels() {
       song:"bryanlowwww",
       id:"1",
       isFollowing: false,
+      isLike: false,
       value:{
         one: `42k`,
         two: `1,520`,
@@ -31,6 +32,7 @@ function Reels() {
       song:"midnight_echo",
       id:"2",
       isFollowing: false,
+      isLike: false,
       value:{
         one: `22k`,
         two: `4,520`,
@@ -45,6 +47,7 @@ function Reels() {
       song:"crystal.dreams",
       id:"3",
       isFollowing: false,
+      isLike: false,
       value:{
         one: `12k`,
         two: `520`,
@@ -59,6 +62,7 @@ function Reels() {
       song:"solar_serenade",
       id:"4",
       isFollowing: false,
+      isLike: false,
       value:{
         one: `8.6k`,
         two: `2,320`,
@@ -73,6 +77,7 @@ function Reels() {
       song:"cosmic_cascade",
       id:"5",
       isFollowing: false,
+      isLike: false,
       value:{
         one: `17k`,
         two: `720`,
@@ -87,6 +92,7 @@ function Reels() {
       song:"crimson.reverie",
       id:"5",
       isFollowing: false,
+      isLike: false,
       value:{
         one: `2.5k`,
         two: `820`,
@@ -131,6 +137,15 @@ function Reels() {
     prevButtons.map((button) =>
     button.id === id
     ? { ...button, isFollowing: !button.isFollowing }
+    : button
+    )
+    );
+  };
+  const likeToggle = (e, id) => {
+    setpostImg((prevButtons) =>
+    prevButtons.map((button) =>
+    button.id === id
+    ? { ...button, isLike: !button.isLike }
     : button
     )
     );
@@ -199,7 +214,10 @@ function Reels() {
                         </div>
                         <div id="reelRightIcon" className="flex flex-col items-center justify-center">
                         {/* <i className="ri-heart-line"></i> */}
-                        <i className="ri-heart-fill text-red-600 cursor-pointer"></i>
+                        {/* <i className="ri-heart-fill text-red-600 cursor-pointer"></i> */}
+                        <div key={src.id} className='inline-block' onClick={(e) => likeToggle(e, src.id)}>
+                        {src.isLike ? <i className="ri-heart-fill cursor-pointer text-[#ff0000]"></i> : <i className="ri-heart-line cursor-pointer"></i>}
+                        </div>
                         <p>
                         {src.value.one}
                         {/* {Math.floor(Math.random()*10000)} */}
