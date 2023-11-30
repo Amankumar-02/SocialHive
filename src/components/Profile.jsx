@@ -59,9 +59,9 @@ function Profile() {
       userDp:
         "https://images.unsplash.com/photo-1542295856-082da537cda4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       userText: "Oleg_Ivanov",
-      dp: "https://plus.unsplash.com/premium_photo-1700398530598-0cfb9fc051b1?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      dp: "https://images.unsplash.com/photo-1575378724065-48e9bac9b790?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       like: "1,68,620 likes",
-      text: "festive cake with almonds and a cup of coffee on a brown ceramic plate",
+      text: "Embracing every shade of fabulous.",
       id:"1",
       isLike: false,
       StyleFormat:{
@@ -72,9 +72,9 @@ function Profile() {
       userDp:
         "https://images.unsplash.com/photo-1616839261111-d7070563052c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       userText: "Vlad_Dyshlivenko",
-      dp: "https://images.unsplash.com/photo-1622185135825-d34b40aa03ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      dp: "https://images.unsplash.com/photo-1504909595448-91378747b0cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       like: "1,20,620 likes",
-      text: "Royal Enfield motorbike",
+      text: "Ducati Monster 796",
       id:"2",
       isLike: false,
       StyleFormat:{
