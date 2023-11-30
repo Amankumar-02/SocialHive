@@ -75,6 +75,56 @@ html, body{
   justify-content: center;
   flex-direction: column;
 }
+#storyFullView{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+#storyViewDp{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.445);
+  overflow: hidden;
+}
+#storyViewDp img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#storySearchBar{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 10px ;
+  padding: 4px;
+  border-radius: 10px;
+  color: black;
+}
+#storySearchBar input{
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 6px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  width: 100%;
+  color: white;
+}
+#storySearchBar input::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+#storySearchBar i{
+  margin-left: 10px;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
 #topBar{
   display: flex;
   align-items: center;
