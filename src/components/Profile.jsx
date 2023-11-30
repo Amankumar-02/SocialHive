@@ -64,6 +64,9 @@ function Profile() {
       text: "festive cake with almonds and a cup of coffee on a brown ceramic plate",
       id:"1",
       isLike: false,
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       userDp:
@@ -74,6 +77,9 @@ function Profile() {
       text: "Royal Enfield motorbike",
       id:"2",
       isLike: false,
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       userDp:
@@ -84,6 +90,9 @@ function Profile() {
       text: "Shelby GT350R",
       id:"3",
       isLike: false,
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       userDp:
@@ -94,6 +103,9 @@ function Profile() {
       text: "Whats up doc!!!",
       id:"4",
       isLike: false,
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       userDp:
@@ -104,6 +116,9 @@ function Profile() {
       text: "Illuminating the Night with Mother Nature Experience the magic of bioluminescence in the Maldives and be awed by the glowing waters of k.Huraa Island",
       id:"5",
       isLike: false,
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       userDp:
@@ -114,6 +129,9 @@ function Profile() {
       text: "Duck Season Rabbit Season",
       id:"6",
       isLike: false,
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
   ]);
 
@@ -126,9 +144,6 @@ function Profile() {
   const [fullScreen, setFullScreen] = useState({
     transform: "scale(0)",
     backgroundImage: "none",
-  });
-  const [like, setLike] = useState({
-    transform: `translate(-50%, -50%) scale(0)`,
   });
 
   //declare auth methods
@@ -175,12 +190,18 @@ function Profile() {
     setpostImg((prevButtons) =>
     prevButtons.map((button) =>
     button.id === idIndex
-    ? { ...button, isLike: true }
+    ? { ...button, isLike: true, StyleFormat:{transform: `translate(-50%, -50%) scale(1)`} }
     : button
     ));
-    setLike({ transform: `translate(-50%, -50%) scale(1)` });
+    // setLike({ transform: `translate(-50%, -50%) scale(1)` });
     setTimeout(() => {
-      setLike({ transform: `translate(-50%, -50%) scale(0)` });
+      setpostImg((prevButtons) =>
+      prevButtons.map((button) =>
+      button.id === idIndex
+      ? { ...button, StyleFormat:{transform: `translate(-50%, -50%) scale(0)`} }
+      : button
+      ));
+      // setLike({ transform: `translate(-50%, -50%) scale(0)` });
     }, 1000);
   };
   const likeToggle = (id) => {
@@ -290,7 +311,7 @@ function Profile() {
                 {postImg.map((src, index) => (
                   <Post
                     key={index}
-                    likeStyle={like}
+                    likeStyle={src.StyleFormat}
                     src={src}
                     alt={`post${index + 1}`}
                     dblClickEvent={() => dblClick(src.id)}
