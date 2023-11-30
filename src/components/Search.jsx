@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import "remixicon/fonts/remixicon.css";
 import { useState, useEffect } from "react";
 import authService from "../appwrite/auth";
@@ -448,6 +448,7 @@ function Search() {
     : button
     )
     );
+    alert(`Followed, go back and visit again to see changes`);
   };
   const likeToggle = (e, id) => {
     setPostImg((prevButtons) =>
@@ -457,6 +458,7 @@ function Search() {
     : button
     )
     );
+    alert(`Liked, go back and visit again to see changes`);
   };
   return (
     <>
