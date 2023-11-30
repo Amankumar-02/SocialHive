@@ -131,10 +131,17 @@ html, body{
   justify-content: space-between;
   padding: 10px 15px 0px 15px;
 }
-#topSearchViewBar, #topReelBar, #topNotificationBar{
+#topReelBar, #topNotificationBar{
   display: flex;
   align-items: center;
   padding: 10px 15px 10px 15px;
+}
+#topSearchViewBar{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+  background-color: white;
+  color: black;
 }
 #topImg img{
   width: 60%;
@@ -298,6 +305,7 @@ html, body{
   background-color: transparent;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transform: scale(0);
   transition: all ease 0.5s;
   z-index: 20;
@@ -371,7 +379,7 @@ html, body{
   margin-bottom: 20px;
 }
 #bottomBar{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
