@@ -1,14 +1,11 @@
-import React from "react";
-import "remixicon/fonts/remixicon.css";
-import { useState, useEffect } from "react";
+import React, {useState} from 'react'
+import { useParams, Link, useNavigate } from "react-router-dom";
 import authService from "../appwrite/auth";
-import { useNavigate, Link, NavLink } from "react-router-dom";
+import "remixicon/fonts/remixicon.css";
 import toast from "react-hot-toast";
-import FooterBar from "./FooterBar";
 
-function Search() {
-  // declare images
-  const postImg = [
+function SearchPreview() {
+  const [postImg, setPostImg] = useState([
     {dp:"https://images.unsplash.com/photo-1607829866698-a186b93fdd0f?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
     profileDp:"https://images.unsplash.com/photo-1484588168347-9d835bb09939?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     nameText:"mia_jones",
@@ -393,23 +390,21 @@ function Search() {
     //   StyleFormat:{
     //     transform: `translate(-50%, -50%) scale(0)`,
     //   },},
-  ];
-
-  //declare variables
+  ]);
   const navigate = useNavigate();
-  const [userDetails, setUserDetails] = useState();
+  // const [userDetails, setUserDetails] = useState();
+  const {userId} = useParams();
 
-  //declare auth methods
-  useEffect(() => {
-    try {
-      const getData = authService.account.get();
-      getData.then(function (res) {
-        setUserDetails(res);
-      });
-    } catch (error) {
-      console.log(`Get Data error: `, error);
-    }
-  }, []);
+  // useEffect(() => {
+  //   try {
+  //     const getData = authService.account.get();
+  //     getData.then(function (res) {
+  //       setUserDetails(res);
+  //     });
+  //   } catch (error) {
+  //     console.log(`Get Data error: `, error);
+  //   }
+  // }, []);
 
   const logoutUser = async (e) => {
     // e.preventDefault();
@@ -424,10 +419,37 @@ function Search() {
     }
   };
 
+
+
+//declare the eventHandler
+const textToggle = (e, id) => {
+  setPostImg((prevButtons) =>
+  prevButtons.map((button) =>
+  button.id === id
+  ? { ...button, isFollowing: !button.isFollowing }
+  : button
+  )
+  );
+};
+
+
+const likeToggle = (e, id) => {
+  setPostImg((prevButtons) =>
+  prevButtons.map((button) =>
+  button.id === id
+  ? { ...button, isLike: !button.isLike }
+  : button
+  )
+  );
+};
+
+
+
+
   return (
     <>
-      {userDetails ? (
-        <>
+      {/* {userDetails ? (
+        <> */}
           <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
             <div>
               <Link to="/profile">
@@ -449,47 +471,100 @@ function Search() {
           </div>
           <div className="container">
             <div id="card">
-              
-              <div id="searchBar" className="bg-gray-300">
-                <i className="ri-search-line"></i>
-                <input
-                  type="text"
-                  className="bg-transparent"
-                  placeholder="Search"
-                />
-              </div>
-              <div id="searchContainer">
-                {postImg.map((src, index) => (
-                  <div key={index}>
-                  <Link to={`/search/previews/${index}`}>
-                  <div className="searchTab cursor-pointer" key={index}>
-                    <img
-                      src={src.dp}
-                      alt={index}
-                      />
-                  </div>
+              <div
+                id="searchPreviewfullScreen"
+                // style={fullScreen}
+                // onClick={() =>
+                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
+                // }
+                style={{ backgroundImage: `url(${postImg[userId].dp})` }}
+              >
+                <div id="topSearchViewBar">
+                  <Link to="/search">
+                    <i
+                      className="ri-arrow-left-line text-xl cursor-pointer"
+                      // onClick={() =>
+                      //   setFullScreen({
+                      //     transform: "scale(0)",
+                      //     backgroundImage: "none",
+                      //   })
+                      // }
+                    ></i>
                   </Link>
+                  <p className="text-lg ps-4 font-semibold">Explore</p>
+                </div>
+                <div id="searchImgView">
+                  <div id="searchLeftText">
+                    <div className="flex items-center">
+                      <div id="searchLeftImg">
+                        <img src={postImg[userId].profileDp} alt="" />
                       </div>
-                ))}
+                      <p className="text-sm ps-2">{postImg[userId].nameText}</p>
+                      <button
+                        id="reelBtn"
+                        key={postImg[userId].id}
+                        onClick={(e) => textToggle(e, postImg[userId].id)}
+                      >
+                        {postImg[userId].isFollowing ? "Following" : "Follow"}
+                      </button>
+                      {/* <button id="searchViewBtn">Follow</button> */}
+                    </div>
+                    <div className="pt-3 pb-1">
+                      <p className="text-xs">{postImg[userId].caption}</p>
+                    </div>
+                  </div>
+                  <div
+                    id="searchRightIcon"
+                    className="flex flex-col items-center justify-center"
+                  >
+                    {/* <i className="ri-heart-line"></i> */}
+                    {/* <i className="ri-heart-fill text-red-600 cursor-pointer"></i> */}
+                    <div
+                      key={postImg[userId].id}
+                      className="inline-block"
+                      onClick={(e) => likeToggle(e, postImg[userId].id)}
+                    >
+                      {postImg[userId].isLike ? (
+                        <i className="ri-heart-fill cursor-pointer text-[#ff0000]"></i>
+                      ) : (
+                        <i className="ri-heart-line cursor-pointer"></i>
+                      )}
+                    </div>
+                    <p>
+                      {postImg[userId]?.value?.one}
+                      {/* {Math.floor(Math.random()*10000)} */}
+                    </p>
+                    <i className="ri-chat-3-line cursor-pointer"></i>
+                    <p>
+                      {postImg[userId]?.value?.two}
+                      {/* {Math.floor(Math.random()*1000)} */}
+                    </p>
+                    <i className="ri-send-plane-line cursor-pointer"></i>
+                    <p>
+                      {postImg[userId]?.value?.three}
+                      {/* {Math.floor(Math.random()*1000)} */}
+                    </p>
+                    <i className="ri-list-check cursor-pointer"></i>
+                  </div>
+                </div>
               </div>
-              <FooterBar />
             </div>
           </div>
         </>
-      ) : (
-        <>
-          <p className="mt-4">
-            Please Login To see Profile{" "}
-            <Link to="/">
-              <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
-                Login
-              </span>
-            </Link>
-          </p>
-        </>
-      )}
-    </>
+    //   ) : (
+    //     <>
+    //       <p className="mt-4">
+    //         Please Login To see Profile{" "}
+    //         <Link to="/">
+    //           <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
+    //             Login
+    //           </span>
+    //         </Link>
+    //       </p>
+    //     </>
+    //   )}
+    // </>
   );
 }
 
-export default Search
+export default SearchPreview
