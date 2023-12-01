@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useParams, Link, useNavigate } from "react-router-dom";
 import authService from "../appwrite/auth";
 import "remixicon/fonts/remixicon.css";
@@ -392,22 +392,22 @@ function SearchPreview() {
     //   },},
   ]);
   const navigate = useNavigate();
-  // const [userDetails, setUserDetails] = useState();
+  const [userDetails, setUserDetails] = useState();
   const {userId} = useParams();
   const goBack = () => {
     window.history.back();
   };
 
-  // useEffect(() => {
-  //   try {
-  //     const getData = authService.account.get();
-  //     getData.then(function (res) {
-  //       setUserDetails(res);
-  //     });
-  //   } catch (error) {
-  //     console.log(`Get Data error: `, error);
-  //   }
-  // }, []);
+  useEffect(() => {
+    try {
+      const getData = authService.account.get();
+      getData.then(function (res) {
+        setUserDetails(res);
+      });
+    } catch (error) {
+      console.log(`Get Data error: `, error);
+    }
+  }, []);
 
   const logoutUser = async (e) => {
     // e.preventDefault();
@@ -464,8 +464,8 @@ const likeToggle = (e, id) => {
 
   return (
     <>
-      {/* {userDetails ? (
-        <> */}
+      {userDetails ? (
+        <>
           <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
             <div>
               <Link to="/profile">
@@ -563,19 +563,19 @@ const likeToggle = (e, id) => {
             </div>
           </div>
         </>
-    //   ) : (
-    //     <>
-    //       <p className="mt-4">
-    //         Please Login To see Profile{" "}
-    //         <Link to="/">
-    //           <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
-    //             Login
-    //           </span>
-    //         </Link>
-    //       </p>
-    //     </>
-    //   )}
-    // </>
+      ) : (
+        <>
+          {/* <p className="mt-4">
+            Please Login To see Profile{" "}
+            <Link to="/">
+              <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
+                Login
+              </span>
+            </Link>
+          </p> */}
+        </>
+      )}
+    </>
   );
 }
 

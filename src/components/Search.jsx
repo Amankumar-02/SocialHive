@@ -478,14 +478,14 @@ function Search() {
         </>
       ) : (
         <>
-          <p className="mt-4">
+          {/* <p className="mt-4">
             Please Login To see Profile{" "}
             <Link to="/">
               <span className="bg-blue-300 p-2 cursor-pointer text-white rounded-md">
                 Login
               </span>
             </Link>
-          </p>
+          </p> */}
         </>
       )}
     </>
