@@ -312,7 +312,7 @@ html, body{
   z-index: 20;
 }
 #main-posts{
-  height: calc(100% - 192px);
+  height: calc(100% - 197px);
   /* height: 320px; */
   width: 100%;
   white-space: nowrap;
