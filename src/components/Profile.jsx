@@ -15,7 +15,7 @@ function Profile() {
       dp: "https://images.unsplash.com/photo-1700235120867-3517dbe5dd52?q=80&w=1444&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       story:
         "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        text:"elizabeth_jane",
+        text:"elien_wat",
     },
     {
       dp: "https://images.unsplash.com/photo-1564038079594-99ba184fd036?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -295,7 +295,7 @@ function Profile() {
               <div className="userStory">
                 <img src="https://images.unsplash.com/photo-1635586409095-b5d87cebe12b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={''} />
                 <div id="bluePlusIcon">+</div>
-                <p className="text-[10px] text-center font-semibold">Your Story</p>
+                <p className="text-[11px] pt-1 text-center">Your Story</p>
               </div>
                 {img.map((src, index) => (
                   <Stories
