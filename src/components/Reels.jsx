@@ -23,6 +23,9 @@ function Reels() {
         two: `1,520`,
         three: `631`,
       },
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -37,6 +40,9 @@ function Reels() {
         one: `22k`,
         two: `4,520`,
         three: `331`,
+      },
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
       },
     },
     {
@@ -53,6 +59,9 @@ function Reels() {
         two: `520`,
         three: `31`,
       },
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1524704088085-cfbde9454330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -67,6 +76,9 @@ function Reels() {
         one: `8.6k`,
         two: `2,320`,
         three: `621`,
+      },
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
       },
     },
     {
@@ -83,6 +95,9 @@ function Reels() {
         two: `720`,
         three: `131`,
       },
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
+      },
     },
     {
       dp: "https://images.unsplash.com/photo-1528491836309-55b4a140b78a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -97,6 +112,9 @@ function Reels() {
         one: `2.5k`,
         two: `820`,
         three: `431`,
+      },
+      StyleFormat:{
+        transform: `translate(-50%, -50%) scale(0)`,
       },
     },
   ]);
@@ -140,6 +158,24 @@ function Reels() {
     : button
     )
     );
+  };
+  const dblClick = (idIndex) => {
+    setpostImg((prevButtons) =>
+    prevButtons.map((button) =>
+    button.id === idIndex
+    ? { ...button, isLike: true, StyleFormat:{transform: `translate(-50%, -50%) scale(1)`} }
+    : button
+    ));
+    // setLike({ transform: `translate(-50%, -50%) scale(1)` });
+    setTimeout(() => {
+      setpostImg((prevButtons) =>
+      prevButtons.map((button) =>
+      button.id === idIndex
+      ? { ...button, StyleFormat:{transform: `translate(-50%, -50%) scale(0)`} }
+      : button
+      ));
+      // setLike({ transform: `translate(-50%, -50%) scale(0)` });
+    }, 1000);
   };
   const likeToggle = (e, id) => {
     setpostImg((prevButtons) =>
@@ -186,8 +222,9 @@ function Reels() {
                   {postImg.map((src, index) => (
                     // <div className="reelTab">
                       <div key={index} className="reelsImg">
-                      <img src={src.dp} alt={index} />
-                      <div id="reelOver" className="absolute">
+                      <i className="ri-heart-3-fill absolute" id="reelsDblTap" style={src.StyleFormat}></i>
+                      <img src={src.dp} alt={index}/>
+                      <div id="reelOver" className="absolute" onDoubleClick={()=>{dblClick(src.id)}}>
                         <div id="reelLeftText">
                           <div className="flex items-center">
                           <div id="reelLeftImg">

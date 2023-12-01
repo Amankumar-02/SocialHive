@@ -695,8 +695,11 @@ html, body{
   position: absolute;
   color: white;
   /* top: 210px; */
-  top: calc(100% - 230px);
-  width: 346px;
+  /* top: calc(100% - 441px); */
+  top: 0;
+  height: 100%;
+  /* width: 346px; */
+  width: 100%;
   padding: 8px;
   display: flex;
   justify-content: space-between;
@@ -807,7 +810,7 @@ html, body{
   z-index: 20;
 }
 
-#searchDblTap, #userDblTap{
+#searchDblTap, #reelsDblTap, #userDblTap{
   color: white;
   font-size: 75px;
   position: absolute;
