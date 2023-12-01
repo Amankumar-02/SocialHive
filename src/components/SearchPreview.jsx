@@ -394,6 +394,9 @@ function SearchPreview() {
   const navigate = useNavigate();
   // const [userDetails, setUserDetails] = useState();
   const {userId} = useParams();
+  const goBack = () => {
+    window.history.back();
+  };
 
   // useEffect(() => {
   //   try {
@@ -480,17 +483,12 @@ const likeToggle = (e, id) => {
                 style={{ backgroundImage: `url(${postImg[userId].dp})` }}
               >
                 <div id="topSearchViewBar">
-                  <Link to="/search">
+                  {/* <Link to="/search"> */}
                     <i
                       className="ri-arrow-left-line text-xl cursor-pointer"
-                      // onClick={() =>
-                      //   setFullScreen({
-                      //     transform: "scale(0)",
-                      //     backgroundImage: "none",
-                      //   })
-                      // }
+                      onClick={goBack}
                     ></i>
-                  </Link>
+                  {/* </Link> */}
                   <p className="text-lg ps-4 font-semibold">Explore</p>
                 </div>
                 <div id="searchImgView">
