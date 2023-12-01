@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function FooterBar() {
+  const userDets = {userProfileDp:"https://images.unsplash.com/photo-1635586409095-b5d87cebe12b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",}
   return (
     <div id="bottomBar">
                 <NavLink
@@ -52,7 +53,7 @@ function FooterBar() {
                 >
                   {/* <i className="ri-user-line"></i> */}
                   <div id='bottomLastProfile'>
-                    <img src="https://images.unsplash.com/photo-1635586409095-b5d87cebe12b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <img src={userDets.userProfileDp} alt="" />
                   </div>
                 </NavLink>
               </div>

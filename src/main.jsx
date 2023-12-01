@@ -8,6 +8,7 @@ import Profile from './components/Profile.jsx'
 import Signup from './components/Signup.jsx'
 import Login from './components/Login.jsx'
 import User from './components/User.jsx';
+import UserPreview from './components/UserPreview.jsx'
 import Search from './components/Search.jsx';
 import SearchPreview from './components/SearchPreview.jsx';
 import Reels from './components/Reels.jsx';
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/user' element={<User/>}/>
+      <Route path='/user/previews/:userId' element={<UserPreview/>}/>
       <Route path='/search' element={<Search/>}/>
       <Route path='/search/previews/:userId' element={<SearchPreview/>}/>
       <Route path='/reels' element={<Reels/>}/>

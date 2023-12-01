@@ -512,7 +512,7 @@ const likeToggle = (e, id) => {
                       </div>
                       <p className="text-sm ps-2">{postImg[userId].nameText}</p>
                       <button
-                        id="reelBtn"
+                        id="searchBtn"
                         key={postImg[userId].id}
                         onClick={(e) => textToggle(e, postImg[userId].id)}
                       >
