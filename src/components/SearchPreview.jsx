@@ -422,8 +422,6 @@ function SearchPreview() {
     }
   };
 
-
-
 //declare the eventHandler
 const textToggle = (e, id) => {
   setPostImg((prevButtons) =>
@@ -435,6 +433,24 @@ const textToggle = (e, id) => {
   );
 };
 
+const dblClick = (idIndex) => {
+  setPostImg((prevButtons) =>
+  prevButtons.map((button) =>
+  button.id === idIndex
+  ? { ...button, isLike: true, StyleFormat:{transform: `translate(-50%, -50%) scale(1)`} }
+  : button
+  ));
+  // setLike({ transform: `translate(-50%, -50%) scale(1)` });
+  setTimeout(() => {
+    setPostImg((prevButtons) =>
+    prevButtons.map((button) =>
+    button.id === idIndex
+    ? { ...button, StyleFormat:{transform: `translate(-50%, -50%) scale(0)`} }
+    : button
+    ));
+    // setLike({ transform: `translate(-50%, -50%) scale(0)` });
+  }, 1000);
+};
 
 const likeToggle = (e, id) => {
   setPostImg((prevButtons) =>
@@ -445,9 +461,6 @@ const likeToggle = (e, id) => {
   )
   );
 };
-
-
-
 
   return (
     <>
@@ -476,12 +489,9 @@ const likeToggle = (e, id) => {
             <div id="card">
               <div
                 id="searchPreviewfullScreen"
-                // style={fullScreen}
-                // onClick={() =>
-                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
-                // }
                 style={{ backgroundImage: `url(${postImg[userId].dp})` }}
               >
+                <div className='flex flex-col h-[100%] justify-between relative' onDoubleClick={()=>{dblClick(postImg[userId].id)}}>
                 <div id="topSearchViewBar">
                   {/* <Link to="/search"> */}
                     <i
@@ -490,6 +500,9 @@ const likeToggle = (e, id) => {
                     ></i>
                   {/* </Link> */}
                   <p className="text-lg ps-4 font-semibold">Explore</p>
+                </div>
+                <div className='bg-transparent h-[100%]'>
+                <i className="ri-heart-3-fill absolute" id="searchDblTap" style={postImg[userId].StyleFormat}></i>
                 </div>
                 <div id="searchImgView">
                   <div id="searchLeftText">
@@ -544,6 +557,7 @@ const likeToggle = (e, id) => {
                     </p>
                     <i className="ri-list-check cursor-pointer"></i>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
