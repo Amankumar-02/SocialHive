@@ -1,8 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Instagram Clone project build using React JS.
+Here, i try to build this project as real it is.
+First Signup by creating a new account on this clone app, if you already created an account just do a Login on this clone app.
 
-Currently, two official plugins are available:
+Now, i describe each component which i use and the features which i add ==>
+1. Home page ==> 
+    (a) Here, i add story feature which slides left to show more, then if you tap on any story is shows the story posted.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    (b) I added posts which are is series, to access just slide up to see more.
+
+    (c) Third, i add like feature, if you double tap on the img to show a popup heart and also change the color of below heart icon color to red.

@@ -7,27 +7,6 @@ import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 
 function Notification() {
-  // declare images
-  const postImg = [
-    {
-      dp: "https://images.unsplash.com/photo-1671811988458-95441face9d9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1625231334168-35067f8853ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://media.tenor.com/lgLtVbUlDjkAAAAC/fantic-af.gif",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1676196919586-32234be2a211?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://media.tenor.com/xYJLQil6oQ8AAAAC/duck-season-rabbit-season.gif",
-    },
-  ];
 
   //declare variables
   const navigate = useNavigate();
@@ -38,7 +17,10 @@ function Notification() {
   const [isFollowing, setIsFollowing] = useState(false);
   const [display, setDisplay] = useState({display:"inline-block"});
   const [confirm, setConfirm] = useState("Confirm");
+  const [display2, setDisplay2] = useState({display:"inline-block"});
+  const [confirm2, setConfirm2] = useState("Confirm");
   const [deleteReq, setDeleteReq] = useState({})
+  const [deleteReq2, setDeleteReq2] = useState({})
 
   //declare auth methods
   useEffect(() => {
@@ -71,8 +53,15 @@ function Notification() {
     setDisplay({display:"none"});
     setConfirm("Confirmed")
   }
+  const hideDelete2 = ()=>{
+    setDisplay2({display:"none"});
+    setConfirm2("Confirmed")
+  }
   const deleteWhenConfirm = ()=>{
     setDeleteReq({display:"none"})
+  }
+  const deleteWhenConfirm2 = ()=>{
+    setDeleteReq2({display:"none"})
   }
   return (
     <>
@@ -99,27 +88,6 @@ function Notification() {
           </div>
           <div className="container">
             <div id="card">
-              {/* <div id="topBar">
-                <div id="topImg">
-                  <Link to="/profile">
-                    <img
-                      src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
-                      alt="Insta Icon"
-                    />
-                  </Link>
-                </div>
-                <div id="topIcons">
-                  <NavLink to="/add">
-                    <i className="ri-add-box-line"></i>
-                  </NavLink>
-                  <NavLink to="/notifications">
-                    <i className="ri-heart-line"></i>
-                  </NavLink>
-                  <Link to="/messages">
-                    <i className="ri-messenger-line"></i>
-                  </Link>
-                </div>
-              </div> */}
               <div id="topNotificationBar">
                 {/* <Link to="/profile"> */}
                   <i className="ri-arrow-left-line text-xl cursor-pointer" onClick={goBack}></i>
@@ -185,6 +153,25 @@ function Notification() {
                     {confirm}
                   </button>
                   <button id="deleteBtn" className="bg-gray-300 px-2 py-1 ms-2 rounded-lg font- text-sm cursor-pointer" style={display} onClick={deleteWhenConfirm}>
+                    Delete
+                  </button>
+                </div>
+                </div>
+                <div className="flex items-center justify-between pt-4" style={deleteReq2}>
+                  <div className="flex items-center">
+                  <div className="notificationImg">
+                    <img src="https://images.unsplash.com/photo-1527736947477-2790e28f3443?q=80&w=1524&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                 </div>
+                <div className="ps-3 w-[138px]">
+                <p className="text-xs font-semibold">elizabeth_grey<span className="font-normal"> requested to follow you.</span></p>
+                </div>
+                  </div>
+                <div>
+                  <button className="bg-regal-blue px-2 py-1 ms-2 rounded-lg text-white text-sm cursor-pointer" onClick={hideDelete2}>
+                    {/* Confirm */}
+                    {confirm2}
+                  </button>
+                  <button id="deleteBtn" className="bg-gray-300 px-2 py-1 ms-2 rounded-lg font- text-sm cursor-pointer" style={display2} onClick={deleteWhenConfirm2}>
                     Delete
                   </button>
                 </div>
