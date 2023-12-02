@@ -6,6 +6,7 @@ First Signup by creating a new account on this clone app, if you already created
 
 Now, i describe each component which i use and the features which i add ==>
 1. Home page ==> 
+
     (a) Here, i add story feature which slides left to show more, then if you tap on any story is shows the story posted.
 
     (b) I added posts which are is series, to access just slide up to see more.
