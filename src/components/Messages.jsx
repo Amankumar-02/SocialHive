@@ -118,7 +118,7 @@ function Messages() {
     <>
       {userDetails ? (
         <>
-          <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
+          {/* <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
             <div>
               <Link to="/profile">
                 <img
@@ -136,7 +136,7 @@ function Messages() {
                 Logout
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="container">
             <div id="card">
               {/* here we declare the msg tab */}

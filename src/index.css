@@ -10,6 +10,12 @@
 }
 #root {
   padding: 1rem 2rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
 }
 html, body{
   height: 100%;
@@ -67,9 +73,12 @@ html, body{
 
 /* Profile Page */
 .container{
-  /* padding-top: 1rem; */
+  padding: 6px 0px;
   scroll-behavior: smooth;
   /* background-color: lightseagreen; */
+  border-radius: 20px;
+  border: 4px solid black;
+  width: 370px;
   display: flex;
   align-items: center;
   justify-content: center;

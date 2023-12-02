@@ -7,27 +7,6 @@ import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 
 function Add() {
-    // declare images
-  const postImg = [
-    {
-      dp: "https://images.unsplash.com/photo-1671811988458-95441face9d9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1671811636280-ffd59649e424?q=80&w=1581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1625231334168-35067f8853ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://media.tenor.com/lgLtVbUlDjkAAAAC/fantic-af.gif",
-    },
-    {
-      dp: "https://images.unsplash.com/photo-1676196919586-32234be2a211?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      dp: "https://media.tenor.com/xYJLQil6oQ8AAAAC/duck-season-rabbit-season.gif",
-    },
-  ];
 
   //declare variables
   const navigate = useNavigate();
@@ -61,7 +40,7 @@ function Add() {
     <>
       {userDetails ? (
         <>
-          <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
+          {/* <div className="min-h-min max-w-7xl mx-auto flex justify-between text-left px-3 rounded-md">
             <div>
               <Link to="/profile">
                 <img
@@ -79,7 +58,7 @@ function Add() {
                 Logout
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="container">
             <div id="card">
               <div id="topBar">
