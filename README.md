@@ -23,13 +23,35 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
     (c) Add like feature, if you double tap on the img to show a popup heart and also change the color of below heart icon color to red & if you tap the heart icon directly it will turn red.
 
-- Feature 2
-- ...
-- ...
-- ...
-- ...
-- ...
-- ...
+- Explore Page
+
+    (a)
+
+- Add Posts Page
+
+    (a) This page is under process.
+
+- Reels Page
+
+    (a)
+
+- Profile Page
+
+    (a)
+
+- Notification Page
+
+    (a)
+
+- Messages Page
+
+    (a)
+
+- Logout
+
+    (a) Go to profile, tap top right menu icon.
+    (b) There you see a Logout Button.
+
 
 ## Installation
 
