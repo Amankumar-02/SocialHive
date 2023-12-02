@@ -5,7 +5,7 @@ This is an Instagram clone built using React.
 ## Table of Contents
 
 - [Demo](#demo)
-- [Features](#features)
+- [Features](#features / #guide)
 - [Installation](#installation)
 - [Usage](#usage)
 
