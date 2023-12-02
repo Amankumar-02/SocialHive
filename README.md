@@ -15,7 +15,7 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
 ## Features
 
-- Home page
+- <h3>Home page</h3>
 
     (a) Add story feature which slides left to show more, then if you tap on any story is shows the story posted.
 
