@@ -1,27 +1,27 @@
-import React, {useState} from 'react'
-import authService from '../appwrite/auth'
-import { useNavigate } from 'react-router-dom'
-import toast from 'react-hot-toast'
-import loginImg from '../asset/img1.png'
+import React, { useState } from "react";
+import authService from "../appwrite/auth";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import loginImg from "../asset/img1.png";
 
 function Login() {
   const navigate = useNavigate();
   const [user, setUser] = useState({
-    email:'',
-    password:'',
-  })
-  const loginUser = async (e)=>{
+    email: "",
+    password: "",
+  });
+  const loginUser = async (e) => {
     e.preventDefault();
     try {
-      await authService.login({email:user.email, password:user.password});
-      navigate('/profile/');
-      console.log(`Login SuccessFully`)
-      toast.success('Successfully Login!');
+      await authService.login({ email: user.email, password: user.password });
+      navigate("/profile/");
+      console.log(`Login SuccessFully`);
+      toast.success("Successfully Login!");
     } catch (error) {
-      console.error('Log-in failed:', error);
+      console.error("Log-in failed:", error);
       toast.error(error.message);
     }
-  }
+  };
   return (
     <>
       <div
@@ -205,4 +205,4 @@ function Login() {
   );
 }
 
-export default Login
+export default Login;
