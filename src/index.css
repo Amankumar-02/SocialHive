@@ -131,7 +131,7 @@ html, body{
   justify-content: space-between;
   padding: 10px 15px 0px 15px;
 }
-#topReelBar, #topNotificationBar{
+#topReelBar, #topNotificationBar, #topUserMenuBar{
   display: flex;
   align-items: center;
   padding: 10px 15px 10px 15px;
@@ -821,4 +821,17 @@ html, body{
   opacity: 0.8;
   transition: all ease 0.4s;
   text-shadow: 0px 0px 6px red;
+}
+
+#userMenuContainer{
+  /* border: 2px solid red; */
+  height: calc(100% - 48px);
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: none;
+  scroll-behavior: smooth;
+}
+#userMenuContainer::-webkit-scrollbar{
+  display: none;
 }

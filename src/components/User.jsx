@@ -48,12 +48,6 @@ function User() {
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState();
 
-  // declare the styles
-  const [fullScreen, setFullScreen] = useState({
-    transform: "scale(0)",
-    backgroundImage: "none",
-  });
-
   //declare auth methods
   useEffect(() => {
     try {
@@ -115,14 +109,6 @@ function User() {
           </div>
           <div className="container">
             <div id="card">
-            <div
-                id="fullScreen"
-                style={fullScreen}
-                // onClick={() =>
-                //   setFullScreen({ transform: "scale(0)", backgroundImage: "none" })
-                // }
-              >
-              </div>
               <div id="topBar">
                 <div id="topImg" className="flex items-center justify-center">
                   <i className="ri-lock-line"></i>
@@ -153,7 +139,9 @@ function User() {
                   <Link to="/add">
                   <i className="ri-add-box-line"></i>
                   </Link>
+                  <Link to="/user/menu">
                   <i className="ri-menu-line"></i>
+                  </Link>
                 </div>
               </div>
               
