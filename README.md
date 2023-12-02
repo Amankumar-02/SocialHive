@@ -25,7 +25,9 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
 - Explore Page
 
-    (a)
+    (a) Add posts, tap any post and see the post preview.
+    (b) Like feature is same as mention in Home Page.
+    (c) Tap the Follow button and it turn Following.
 
 - Add Posts Page
 
@@ -33,19 +35,32 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
 - Reels Page
 
-    (a)
+    (a) Add reels in list,  scroll the page to see more.
+    (b) Like feature is same as mention in Home Page.
+    (C) Tap the Follow button and it turn Following.
 
 - Profile Page
 
-    (a)
+    (a) Here, you see your profile, your username is mentioned on the page.
+    (b) See, your added posts below.
+    (c) Tap on the post to see preview.
+    (d) Do double tap and like the post.
+    (e) Tap the Follow button and it turn Following.
 
 - Notification Page
 
-    (a)
+    (a) This page is accessable only on home page.
+    (b) Here, see the notifications which you receive.
+    (c) Tap the Follow button and it turn Following.
+    (d) Tap the Confirm button and it turn Confirmed.
+    (e) Tap the Delete button and it delete the request receive to follow you.
 
 - Messages Page
 
-    (a)
+    (a) This page is accessable only on home page.
+    (b) Here, see the messages which you receive.
+    (c) See the green status of online users.
+    (d) Tap any of the contact to see the chats.
 
 - Logout
 
