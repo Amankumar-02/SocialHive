@@ -23,23 +23,23 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
     (c) Add like feature, if you double tap on the img to show a popup heart and also change the color of below heart icon color to red & if you tap the heart icon directly it will turn red.
 
-- Explore Page
+- <h3>Explore Page</h3>
 
     (a) Add posts, tap any post and see the post preview.
     (b) Like feature is same as mention in Home Page.
     (c) Tap the Follow button and it turn Following.
 
-- Add Posts Page
+- <h3>Add Posts Page</h3>
 
     (a) This page is under process.
 
-- Reels Page
+- <h3>Reels Page</h3>
 
     (a) Add reels in list,  scroll the page to see more.
     (b) Like feature is same as mention in Home Page.
     (C) Tap the Follow button and it turn Following.
 
-- Profile Page
+- <h3>Profile Page</h3>
 
     (a) Here, you see your profile, your username is mentioned on the page.
     (b) See, your added posts below.
@@ -47,7 +47,7 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
     (d) Do double tap and like the post.
     (e) Tap the Follow button and it turn Following.
 
-- Notification Page
+- <h3>Notification Page</h3>
 
     (a) This page is accessable only on home page.
     (b) Here, see the notifications which you receive.
@@ -55,14 +55,14 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
     (d) Tap the Confirm button and it turn Confirmed.
     (e) Tap the Delete button and it delete the request receive to follow you.
 
-- Messages Page
+- <h3>Messages Page</h3>
 
     (a) This page is accessable only on home page.
     (b) Here, see the messages which you receive.
     (c) See the green status of online users.
     (d) Tap any of the contact to see the chats.
 
-- Logout
+- <h3>Logout</h3>
 
     (a) Go to profile, tap top right menu icon.
     (b) There you see a Logout Button.
