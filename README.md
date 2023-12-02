@@ -1,11 +1,21 @@
-# React + Vite
+# Instagram Clone React App
 
-This is a Instagram Clone project build using React JS.
-Here, i try to build this project as real it is.
-First Signup by creating a new account on this clone app, if you already created an account just do a Login on this clone app.
+This is an Instagram clone built using React.
 
-Now, i describe each component which i use and the features which i add :-
-<h1>1. Home page</h1>
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Demo
+
+Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
+
+## Features
+
+- Home page
 
     (a) Add story feature which slides left to show more, then if you tap on any story is shows the story posted.
 
@@ -13,27 +23,24 @@ Now, i describe each component which i use and the features which i add :-
 
     (c) Add like feature, if you double tap on the img to show a popup heart and also change the color of below heart icon color to red & if you tap the heart icon directly it will turn red.
 
-<h1>2. Explore Page</h1>
+- Feature 2
+- ...
+- ...
+- ...
+- ...
+- ...
+- ...
 
-    (a)
+## Installation
 
-<h1>3. Add Posts Page</h1>
+To run this project locally, follow these steps:
 
-    (a)This page is under process.
+1. Clone the repository: `git clone https://github.com/Amankumar-02/Instagram-Story-Feature-React#1-home-page`
+2. Navigate to the project directory: `cd instagram-clone-react`
+3. Install dependencies: `npm install`
 
-<h1>4. Reels Page</h1>
+## Usage
 
-    (a)
+Once you have installed the dependencies, start the development server:
 
-<h1>5. Profile Page</h1>
-
-    (a)
-
-<h1>6. Notification Page</h1>
-
-    (a)
-
-<h1>7. Messages Page</h1>
-
-    (a)
-
+npm start
