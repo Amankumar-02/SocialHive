@@ -5,7 +5,7 @@ This is an Instagram clone built using React.
 ## Table of Contents
 
 - [Demo](#demo)
-- [Features/ Guide](#features)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 
@@ -13,7 +13,7 @@ This is an Instagram clone built using React.
 
 Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
-## Features/ Guide
+## Features
 
 - Home page
 
