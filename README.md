@@ -81,5 +81,3 @@ To run this project locally, follow these steps:
 Once you have installed the dependencies, start the development server:
 
 npm start
-
-all good
