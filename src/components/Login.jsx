@@ -24,12 +24,15 @@ function Login() {
   }
   return (
     <>
-      <div id='loginContainer' className="flex items-center justify-around m-auto">
+      <div
+        id="loginContainer"
+        className="flex items-center justify-around m-auto"
+      >
         <div id="instaImg">
           <img src={loginImg} />
         </div>
         <div
-          id='loginBox'
+          id="loginBox"
           className="min-h-full flex flex-col justify-center py-6 sm:px-6 lg:px-8"
         >
           <div className="text-center font-bold text-2xl">
@@ -56,7 +59,7 @@ function Login() {
                       type="email"
                       autoComplete="email"
                       required
-                      placeholder='email address'
+                      placeholder="email address"
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-regal2-blue focus:border-regal2-blue sm:text-sm"
                       onChange={(e) => {
                         setUser({ ...user, email: e.target.value });
@@ -79,7 +82,7 @@ function Login() {
                       type="password"
                       autoComplete="current-password"
                       required
-                      placeholder='password'
+                      placeholder="password"
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-regal2-blue focus:border-regal2-blue sm:text-sm"
                       onChange={(e) => {
                         setUser({ ...user, password: e.target.value });
@@ -90,13 +93,13 @@ function Login() {
 
                 <div className="flex items-center justify-center">
                   <div className="text-sm">
-                  Don't have Account,&nbsp;  
+                    Don't have Account,&nbsp;
                     <a
                       href="/signup"
                       className="text-regal-blue font-semibold
                       hover:font-medium"
                     >
-                       Sign Up
+                      Sign Up
                     </a>
                   </div>
                 </div>
@@ -149,24 +152,32 @@ function Login() {
 
                   <div>
                     <a
-                      href="/"
+                      href="https://twitter.com/AmanKumarr04"
                       className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-regal-blue hover:text-regal2-blue"
                     >
                       <span className="sr-only">Sign in with Twitter</span>
-                      <svg
+                      {/* <svg
                         className="w-5 h-5"
                         aria-hidden="true"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
                         <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                      </svg> */}
+                      <svg
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path>
                       </svg>
                     </a>
                   </div>
 
                   <div>
                     <a
-                      href="/"
+                      href="https://github.com/Amankumar-02"
                       className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-regal-blue hover:text-regal2-blue"
                     >
                       <span className="sr-only">Sign in with GitHub</span>
