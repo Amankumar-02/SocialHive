@@ -221,7 +221,7 @@ function Profile() {
             <div>
               <Link to="/profile">
               <img
-                src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
+                src="./src/asset/logo2.png"
                 alt="Insta Icon"
                 className="w-20"
                 />
@@ -270,7 +270,7 @@ function Profile() {
                 <div id="topImg">
                   <Link to="/profile" className="cursor-auto">
                   <img
-                    src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
+                    src="./src/asset/logo2.png"
                     alt="Insta Icon"
                     className="cursor-pointer"
                     />

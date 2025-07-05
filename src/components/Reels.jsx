@@ -194,7 +194,7 @@ function Reels() {
             <div>
               <Link to="/profile">
                 <img
-                  src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
+                  src="./src/asset/logo2.png"
                   alt="Insta Icon"
                   className="w-20"
                 />

@@ -37,7 +37,7 @@ function Login() {
         >
           <div className="text-center font-bold text-2xl">
             <img
-              src="https://clipart.info/images/ccovers/1522452762Instagram-logo-png-text.png"
+              src="./src/asset/logo.png"
               alt="Insta Icon"
               className="w-40 m-auto"
             />
