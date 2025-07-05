@@ -3,6 +3,7 @@ import authService from "../appwrite/auth";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import loginImg from "../asset/img1.png";
+import logoImg from "../asset/logo.png";
 
 function Login() {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ function Login() {
         >
           <div className="text-center font-bold text-2xl">
             <img
-              src="./src/asset/logo.png"
+              src={logoImg}
               alt="Insta Icon"
               className="w-40 m-auto"
             />

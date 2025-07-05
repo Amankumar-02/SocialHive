@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import authService from '../appwrite/auth'
 import {useNavigate} from 'react-router-dom'
 import toast from 'react-hot-toast';
+import logoImg from "../asset/logo.png";
 
 function Signup() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ function Signup() {
   return (
     <div className="min-h-full flex flex-col justify-center py-12 lg:py-4 sm:px-6 lg:px-8 w-[380px]">
         <div className="text-center text-2xl font-bold"><img
-              src="./src/asset/logo.png"
+              src={logoImg}
               alt="Insta Icon"
               className="w-40 m-auto"
             />

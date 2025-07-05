@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import Stories from "./Stories";
 import Post from "./Post";
 import FooterBar from "./FooterBar";
+import logoImg from "../asset/logo2.png";
 
 function Profile() {
   // declare images
@@ -270,7 +271,7 @@ function Profile() {
                 <div id="topImg">
                   <Link to="/profile" className="cursor-auto">
                   <img
-                    src="./src/asset/logo2.png"
+                    src={logoImg}
                     alt="Insta Icon"
                     className="cursor-pointer"
                     />

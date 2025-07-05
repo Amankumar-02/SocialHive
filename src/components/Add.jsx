@@ -5,6 +5,7 @@ import authService from "../appwrite/auth";
 import FooterBar from "./FooterBar";
 import { useNavigate, Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
+import logoImg from "../asset/logo2.png";
 
 function Add() {
 
@@ -65,7 +66,7 @@ function Add() {
                 <div id="topImg">
                   <Link to="/profile" className="cursor-auto">
                   <img
-                    src="./src/asset/logo2.png"
+                    src={logoImg}
                     alt="Insta Icon"
                     className="cursor-pointer"
                     />
