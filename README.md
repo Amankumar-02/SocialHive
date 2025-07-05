@@ -1,4 +1,4 @@
-# Instagram Clone React App
+# SocialHive
 
 This is an Instagram clone built using React.
 
@@ -11,7 +11,7 @@ This is an Instagram clone built using React.
 
 ## Demo
 
-Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
+Check out the live demo [here](https://socialhive.netlify.app/).
 
 ## Features
 
@@ -72,8 +72,8 @@ Check out the live demo [here](https://polite-eclair-17f68e.netlify.app/).
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Amankumar-02/Instagram-Story-Feature-React#1-home-page`
-2. Navigate to the project directory: `cd instagram-clone-react`
+1. Clone the repository: `git clone https://github.com/Amankumar-02/SocialHive`
+2. Navigate to the project directory: `cd SocialHive`
 3. Install dependencies: `npm install`
 
 ## Usage
